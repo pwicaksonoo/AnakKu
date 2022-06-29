@@ -3,10 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_login.xml" value="0.2" />
-        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_pilih_profil_anak.xml" value="0.25" />
+        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_pick_child.xml" value="0.1" />
+        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_pilih_profil_anak.xml" value="0.1" />
         <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_register.xml" value="0.1" />
-        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_register_child.xml" value="0.1" />
+        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_register_child.xml" value="0.22" />
       </map>
     </option>
   </component>
