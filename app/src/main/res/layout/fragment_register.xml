@@ -77,15 +77,13 @@
         android:inputType="" />
 
     <EditText
-        android:id="@+id/editTextUmur"
+        android:id="@+id/editPilihJumlahAnak"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Umur"
+        android:hint="Jumlah Anak"
         android:layout_marginBottom="10dp"
         android:inputType="" />
-
-
 
 
 </LinearLayout>
