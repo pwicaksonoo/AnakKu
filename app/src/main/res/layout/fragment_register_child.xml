@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterChildFragment"
+    android:paddingTop="50dp"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buat Profil Anak" />
+
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nama Anak"
+        android:layout_marginBottom="10dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextJenisKelamin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Jenis Kelamin"
+        android:layout_marginBottom="10dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tanggal Lahir"
+        android:layout_marginBottom="10dp"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Berat Badan"
+        android:layout_marginBottom="10dp"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tinggi Badan"
+        android:layout_marginBottom="10dp"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=">" />
+
+
+</LinearLayout>
