@@ -37,7 +37,7 @@
         android:ems="10"
         android:hint="Jenis Kelamin"
         android:layout_marginBottom="10dp"
-        android:inputType="text" />
+        android:inputType="textFilter" />
 
     <EditText
         android:id="@+id/editTextDate"
