@@ -67,6 +67,15 @@
         android:layout_marginBottom="10dp"
         android:inputType="textFilter" />
 
+
+    <EditText
+        android:id="@+id/editTextTanggalLahir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Lahir"
+        android:ems="10"
+        android:inputType="date" />
+
     <EditText
         android:id="@+id/editTextUmur"
         android:layout_width="match_parent"
