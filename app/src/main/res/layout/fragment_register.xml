@@ -47,7 +47,7 @@
         android:ems="10"
         android:hint="Buat Kata Sandi"
         android:layout_marginBottom="10dp"
-        android:inputType="number|text" />
+        android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/editTextKonfirmasiPassword"
@@ -56,7 +56,7 @@
         android:ems="10"
         android:hint="Ulangi Kata Sandi"
         android:layout_marginBottom="10dp"
-        android:inputType="number|text" />
+        android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/editTextJenisKelamin"
@@ -91,14 +91,14 @@
         android:text="punya akun?" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:text="klik disini." />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
