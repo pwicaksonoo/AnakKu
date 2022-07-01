@@ -10,7 +10,6 @@
     android:paddingEnd="40dp"
     tools:context=".HomeFragment">
 
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="90dp"
