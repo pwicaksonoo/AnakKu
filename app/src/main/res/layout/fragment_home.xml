@@ -124,7 +124,7 @@
         android:layout_marginLeft="-132dp"
         android:layout_marginTop="7dp"
         android:layout_toRightOf="@id/buttoninfo"
-        android:text="Bicara & Bahasa" />
+        android:text="Bicara dan Bahasa" />
 
     <Button
         android:id="@+id/buttonhome"
