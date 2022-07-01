@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -43,57 +42,97 @@
         android:id="@+id/textTahun1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0 - 1 Tahun * Selesai"
-        tools:layout_editor_absoluteX="110dp"
+        android:text="0 - 1 Tahun"
+        tools:layout_editor_absoluteX="65dp"
         tools:layout_editor_absoluteY="107dp" />
 
     <CheckBox
-        android:id="@+id/checkBox1"
-        android:layout_width="66dp"
+        android:id="@+id/checkBoxselesai1"
+        android:layout_width="wrap_content"
         android:layout_height="34dp"
+        android:text="Selesai"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxbsg"
+        android:layout_width="88dp"
+        android:layout_height="27dp"
         android:text="BCG"
         tools:layout_editor_absoluteX="110dp"
         tools:layout_editor_absoluteY="138dp" />
 
+
     <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="97dp"
-        android:layout_height="32dp"
+        android:id="@+id/checkBoxrota"
+        android:layout_width="98dp"
+        android:layout_height="28dp"
         android:text="Rotavirus"
         tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="212dp" />
+        tools:layout_editor_absoluteY="190dp" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="66dp"
-        android:layout_height="32dp"
+        android:id="@+id/checkBoxpolio"
+        android:layout_width="88dp"
+        android:layout_height="23dp"
         android:text="Polio"
         tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="176dp" />
-
+        tools:layout_editor_absoluteY="165dp" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
-        android:layout_width="64dp"
-        android:layout_height="30dp"
+        android:id="@+id/checkBoxpcv"
+        android:layout_width="89dp"
+        android:layout_height="24dp"
         android:text="PCV"
         tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="246dp" />
+        tools:layout_editor_absoluteY="216dp" />
 
     <TextView
         android:id="@+id/textTahun2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1 - 4 Tahun * Selesai"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="580dp" />
+        android:text="1 - 4 Tahun"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxselesai2"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:text="Selesai"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHepaB"
+        android:layout_width="106dp"
+        android:layout_height="25dp"
+        android:text="Hepatitis B"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxcampak"
+        android:layout_width="89dp"
+        android:layout_height="22dp"
+        android:text="Campak"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="266dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDPT"
+        android:layout_width="90dp"
+        android:layout_height="23dp"
+        android:text="DPT"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="291dp" />
 
     <TextView
         android:id="@+id/textTahun3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="5 - 12 Tahun * Selesai"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="492dp" />
+        android:text="5 - 12 Tahun"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="481dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
