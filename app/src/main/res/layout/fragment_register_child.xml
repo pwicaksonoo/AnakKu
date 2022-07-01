@@ -49,7 +49,7 @@
         android:inputType="date" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/editTextNumberDecimal1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -58,7 +58,7 @@
         android:inputType="numberDecimal" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/editTextNumberDecimal2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"

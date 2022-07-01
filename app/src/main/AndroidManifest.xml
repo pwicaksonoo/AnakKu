@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AnakKu">
-        <activity android:name=".ImmunizationActivity"></activity>
+        <activity android:name=".NewActActivity"></activity>
+        <activity android:name=".ImmunizationActivity" />
         <activity
             android:name=".HomeActivity"
             android:exported="false" />

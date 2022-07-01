@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="40dp"
+    android:paddingTop="50dp"
+    android:paddingEnd="40dp"
+    tools:context=".NewActActivity">
+
+    <TextView
+        android:id="@+id/textaktivitasbaru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="20dp"
+        android:text="Aktivitas Baru" />
+
+    <TextView
+        android:id="@+id/textkegiatananak"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/textaktivitasbaru"
+        android:text="yang dilakukan anak \n bulan ini" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="20dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textbulan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:text="Bulan Agustus" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textbulan"
+        android:layout_marginLeft="40dp"
+        android:text="Makan Sendiri" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox"
+        android:layout_marginLeft="40dp"
+        android:text="Mandiri" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox2"
+        android:layout_marginLeft="40dp"
+        android:text="Mandi Sendiri" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox3"
+        android:layout_marginLeft="40dp"
+        android:text="Menegur Orang" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox4"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="text"
+        android:hint="Tambahkan Aktivitas +"/>
+
+</RelativeLayout>
