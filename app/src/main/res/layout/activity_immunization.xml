@@ -13,37 +13,31 @@
         android:id="@+id/textimunisasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:text="Imunisasi"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Imunisasi" />
 
     <TextView
-        android:id="@+id/textpertanyaan"
+        android:id="@+id/textapakah"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
-        android:text="Apakah anak sudah di imunisasi?"
-        app:layout_constraintStart_toEndOf="@+id/textimunisasi"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:text="Apakah anak sudah di imunisasi?"/>
 
     <TextView
         android:id="@+id/textAnakKeBerapa"
         android:layout_width="93dp"
         android:layout_height="17dp"
-        android:text="Anak Pertama"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="50dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="50dp"
+        android:text="Anak Pertama"/>
 
     <Button
         android:id="@+id/buttonPilih"
         android:layout_width="81dp"
         android:layout_height="37dp"
-        android:text="Pilih"
-        tools:layout_editor_absoluteX="191dp"
-        tools:layout_editor_absoluteY="40dp" />
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="39dp"
+        android:text="Pilih"/>
 
     <TextView
         android:id="@+id/textTahun1"
@@ -100,15 +94,15 @@
         android:layout_height="wrap_content"
         android:text="1 - 4 Tahun"
         tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="322dp" />
+        tools:layout_editor_absoluteY="272dp" />
 
     <CheckBox
         android:id="@+id/checkBoxselesai2"
         android:layout_width="wrap_content"
         android:layout_height="34dp"
         android:text="Selesai"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="316dp" />
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="266dp" />
 
     <CheckBox
         android:id="@+id/checkBoxHepaB"
@@ -123,23 +117,182 @@
         android:layout_width="89dp"
         android:layout_height="22dp"
         android:text="Campak"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="266dp" />
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="142dp" />
 
     <CheckBox
         android:id="@+id/checkBoxDPT"
         android:layout_width="90dp"
         android:layout_height="23dp"
         android:text="DPT"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="165dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDPT2"
+        android:layout_width="90dp"
+        android:layout_height="23dp"
+        android:text="DPT"
         tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="291dp" />
+        tools:layout_editor_absoluteY="307dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTifoid"
+        android:layout_width="90dp"
+        android:layout_height="23dp"
+        android:text="Tifoid"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="327dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPolio2"
+        android:layout_width="90dp"
+        android:layout_height="23dp"
+        android:text="Polio"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHepaA"
+        android:layout_width="109dp"
+        android:layout_height="23dp"
+        android:text="Hepatitis A"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="377dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxpcv2"
+        android:layout_width="90dp"
+        android:layout_height="23dp"
+        android:text="PCV"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxVarisela"
+        android:layout_width="90dp"
+        android:layout_height="23dp"
+        android:text="Varisela"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMMR"
+        android:layout_width="90dp"
+        android:layout_height="23dp"
+        android:text="MMR"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="334dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxInflu"
+        android:layout_width="90dp"
+        android:layout_height="23dp"
+        android:text="Influenza"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="361dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCampak2"
+        android:layout_width="90dp"
+        android:layout_height="23dp"
+        android:text="Campak"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="384dp" />
 
     <TextView
         android:id="@+id/textTahun3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="5 - 12 Tahun"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="481dp" />
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="434dp" />
 
+    <CheckBox
+        android:id="@+id/checkBoxselesai3"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:text="Selesai"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDPT3"
+        android:layout_width="90dp"
+        android:layout_height="23dp"
+        android:text="DPT"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="461dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTifoid2"
+        android:layout_width="90dp"
+        android:layout_height="23dp"
+        android:text="Tifoid"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="488dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPolio3"
+        android:layout_width="90dp"
+        android:layout_height="23dp"
+        android:text="Polio"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="511dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHepaA2"
+        android:layout_width="109dp"
+        android:layout_height="23dp"
+        android:text="Hepatitis A"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="534dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxpcv3"
+        android:layout_width="90dp"
+        android:layout_height="23dp"
+        android:text="PCV"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="561dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxVarisela2"
+        android:layout_width="90dp"
+        android:layout_height="23dp"
+        android:text="Varisela"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="461dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMMR2"
+        android:layout_width="90dp"
+        android:layout_height="23dp"
+        android:text="MMR"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="488dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxInflu2"
+        android:layout_width="90dp"
+        android:layout_height="23dp"
+        android:text="Influenza"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="511dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCampak3"
+        android:layout_width="90dp"
+        android:layout_height="23dp"
+        android:text="Campak"
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="534dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_media_rew"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="611dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
