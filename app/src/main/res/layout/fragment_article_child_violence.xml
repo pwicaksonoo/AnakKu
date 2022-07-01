@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="27dp"
         android:layout_marginRight="20dp"
-        android:text="Artikel |" />
+        android:text="Artikel     |" />
 
     <TextView
         android:id="@+id/textkekerasananak"
