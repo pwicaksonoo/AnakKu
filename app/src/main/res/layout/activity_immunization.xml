@@ -13,31 +13,37 @@
         android:id="@+id/textimunisasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Imunisasi" />
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Imunisasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textpertanyaan"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="0dp"
-        android:text="Apakah anak sudah di imunisasi?"/>
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Apakah anak sudah di imunisasi?"
+        app:layout_constraintStart_toEndOf="@+id/textimunisasi"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textAnakKeBerapa"
         android:layout_width="93dp"
         android:layout_height="17dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="50dp"
-        android:text="Anak Pertama"/>
+        android:text="Anak Pertama"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="50dp" />
 
     <Button
         android:id="@+id/buttonPilih"
         android:layout_width="81dp"
         android:layout_height="37dp"
-        tools:layout_editor_absoluteX="235dp"
-        tools:layout_editor_absoluteY="39dp"
-        android:text="Pilih"/>
+        android:text="Pilih"
+        tools:layout_editor_absoluteX="191dp"
+        tools:layout_editor_absoluteY="40dp" />
 
     <TextView
         android:id="@+id/textTahun1"

@@ -3,15 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.25407608695652173" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1125" />
-        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.5724502563476563" />
-        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.3575897216796875" />
+        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/activity_child_profile.xml" value="0.14" />
+        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/activity_immunization.xml" value="0.67" />
+        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_child_profile.xml" value="0.33" />
+        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_h.xml" value="0.10833333333333334" />
+        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_login.xml" value="0.2" />
+        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_pick_child.xml" value="0.2" />
+        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_pilih_profil_anak.xml" value="0.1" />
+        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_register.xml" value="0.25" />
+        <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_register_child.xml" value="0.22" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
