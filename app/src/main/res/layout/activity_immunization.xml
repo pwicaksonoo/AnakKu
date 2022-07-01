@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,15 +12,21 @@
         android:id="@+id/textimunisasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Imunisasi" />
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Imunisasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textapakah"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="0dp"
-        android:text="Apakah anak sudah di imunisasi?"/>
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Apakah anak sudah di imunisasi?"
+        app:layout_constraintStart_toEndOf="@+id/textimunisasi"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textAnakKeBerapa"
@@ -295,4 +301,4 @@
         tools:layout_editor_absoluteX="151dp"
         tools:layout_editor_absoluteY="611dp" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
