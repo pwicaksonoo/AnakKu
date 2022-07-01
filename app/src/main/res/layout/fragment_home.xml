@@ -158,4 +158,4 @@
         android:layout_toLeftOf="@id/buttonhome"
         app:icon="@android:drawable/arrow_up_float" />
 
-</FrameLayout>
+</RelativeLayout>
