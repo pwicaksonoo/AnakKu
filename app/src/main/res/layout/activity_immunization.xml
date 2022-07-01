@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="40dp"
+    android:paddingTop="50dp"
+    android:paddingEnd="40dp"
+    tools:context=".ImmunizationActivity">
+
+    <TextView
+        android:id="@+id/textimunisasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Imunisasi" />
+
+    <TextView
+        android:id="@+id/textapakah"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:text="Apakah anak sudah di imunisasi?"/>
+
+    <TextView
+        android:id="@+id/textAnakKeBerapa"
+        android:layout_width="93dp"
+        android:layout_height="17dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="50dp"
+        android:text="Anak Pertama"/>
+
+    <Button
+        android:id="@+id/buttonPilih"
+        android:layout_width="81dp"
+        android:layout_height="37dp"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="39dp"
+        android:text="Pilih"/>
+
+    <TextView
+        android:id="@+id/textTahun1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 - 1 Tahun * Selesai"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="66dp"
+        android:layout_height="34dp"
+        android:text="BCG"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="97dp"
+        android:layout_height="32dp"
+        android:text="Rotavirus"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="212dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="66dp"
+        android:layout_height="32dp"
+        android:text="Polio"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="64dp"
+        android:layout_height="30dp"
+        android:text="PCV"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <TextView
+        android:id="@+id/textTahun2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 - 4 Tahun * Selesai"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="580dp" />
+
+    <TextView
+        android:id="@+id/textTahun3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 - 12 Tahun * Selesai"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="492dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
