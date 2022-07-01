@@ -9,7 +9,6 @@
     android:paddingEnd="40dp"
     android:orientation="vertical">
 
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="90dp"
@@ -21,8 +20,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="27dp"
-        android:layout_toRightOf="@id/imageView2"
         android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/imageView2"
         android:text="Selamat Datang, William!" />
 
     <TextView
@@ -34,70 +33,46 @@
         android:layout_toRightOf="@id/imageView2"
         android:text="Informasi Anak, Imunisasi, dll." />
 
-    <Button
-        android:id="@+id/buttonprofilanak"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/imageView2"
-        android:layout_marginTop="19dp"
-        android:text="Profil Anak"
-        android:shape="rectangle"/>
-
-    <Button
-        android:id="@+id/buttonklik"
-        android:layout_width="wrap_content"
-        android:layout_height="83dp"
-        android:layout_below="@id/buttonprofilanak"
-        android:layout_marginTop="-13dp"
-        android:ems="10"
-        android:text="Klik untuk melihat profil anak" />
 
     <Button
         android:id="@+id/buttonimunisasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
-        android:layout_marginLeft="71dp"
-        android:layout_marginTop="116dp"
-        android:layout_toRightOf="@id/buttonprofilanak"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="123dp"
+        android:layout_toRightOf="@id/buttoninfo"
         android:text="Imunisasi" />
 
     <Button
         android:id="@+id/buttonartikel"
-        android:layout_width="wrap_content"
+        android:layout_width="115dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/buttonklik"
-        android:layout_marginLeft="78dp"
-        android:layout_marginTop="-10dp"
-        android:layout_toRightOf="@id/buttonprofilanak"
+        android:layout_below="@id/buttonimunisasi"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@id/buttonkeluhan"
         android:text="Artikel" />
 
     <Button
         android:id="@+id/buttoninfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/buttonklik"
-        android:layout_marginTop="19dp"
-        android:text="Info Anak" />
-
-    <Button
-        android:id="@+id/buttoninfoanak"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttoninfo"
-        android:layout_marginTop="-13dp"
-        android:ems="10"
-        android:text="Umur 2 Tahun\nBerat 10kg\nTinggi 75cm"/>
+        android:layout_below="@id/imageView2"
+        android:layout_marginLeft="-67dp"
+        android:layout_marginTop="49dp"
+        android:layout_toRightOf="@id/imageView2"
+        android:text="Profile Anak" />
 
     <Button
         android:id="@+id/buttonkeluhan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/buttoninfo"
+        android:layout_marginLeft="-136dp"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@id/buttoninfo"
         android:ems="7"
-        android:layout_below="@id/buttonprofilanak"
-        android:layout_marginLeft="34dp"
-        android:layout_marginTop="140dp"
-        android:layout_toRightOf="@id/buttoninfoanak"
         android:text="Keluhan Anak" />
 
     <Button
@@ -105,19 +80,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonkeluhan"
-        android:layout_marginLeft="-103dp"
-        android:layout_marginTop="33dp"
-        android:layout_toRightOf="@id/buttoninfoanak"
-        android:text="Eksplor Kemampuan" />
+        android:layout_marginLeft="-72dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@id/buttoninfo"
+        android:text="Aktivitas Baru" />
 
     <Button
         android:id="@+id/buttoneksplor1"
         android:layout_width="275dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/buttoneksplor"
-        android:layout_marginLeft="-138dp"
-        android:layout_marginTop="2dp"
-        android:layout_toRightOf="@id/buttoninfoanak"
+        android:layout_below="@id/buttonkeluhan"
+        android:layout_marginLeft="-130dp"
+        android:layout_marginTop="72dp"
+        android:layout_toRightOf="@id/buttoninfo"
         android:text="Gerak Halus" />
 
     <Button
@@ -125,9 +100,9 @@
         android:layout_width="275dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/buttoneksplor1"
-        android:layout_marginLeft="-137dp"
-        android:layout_marginTop="0dp"
-        android:layout_toRightOf="@id/buttoninfoanak"
+        android:layout_marginLeft="-131dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/buttoninfo"
         android:text="Gerak Kasar" />
 
     <Button
@@ -135,10 +110,50 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/buttoneksplor2"
-        android:layout_marginLeft="-139dp"
-        android:layout_marginTop="0dp"
-        android:layout_toRightOf="@id/buttoninfoanak"
+        android:layout_marginLeft="-131dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@id/buttoninfo"
         android:text="Sosialisasi dan Kemandirian" />
 
+    <Button
+        android:id="@+id/buttoneksplor4"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttoneksplor3"
+        android:layout_marginLeft="-132dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/buttoninfo"
+        android:text="Bicara & Bahasa" />
+
+    <Button
+        android:id="@+id/buttonhome"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttoneksplor4"
+        android:layout_marginLeft="-17dp"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@id/buttoninfo"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/buttonmap"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttoneksplor4"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/buttonhome"
+        app:icon="@android:drawable/ic_dialog_map" />
+
+    <Button
+        android:id="@+id/buttoncheck"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttoneksplor4"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="31dp"
+        android:layout_toLeftOf="@id/buttonhome"
+        app:icon="@android:drawable/arrow_up_float" />
 
 </RelativeLayout>
