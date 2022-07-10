@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,63 +7,43 @@
     android:paddingStart="40dp"
     android:paddingTop="50dp"
     android:paddingEnd="40dp"
+    android:orientation="vertical"
+    android:background="#E2F1F8"
     tools:context=".ArticleChildViolenceFragment">
 
     <TextView
         android:id="@+id/textartikel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="27dp"
-        android:layout_marginRight="20dp"
-        android:text="Artikel     |" />
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Artikel  Kekerasan anak" />
 
     <TextView
-        android:id="@+id/textkekerasananak"
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="20dp"
-        android:layout_toRightOf="@id/textartikel"
-        android:text="Kekerasan Anak" />
-
-    <TextView
-        android:id="@+id/textpernyataan"
+        android:id="@+id/textpernyataanartikel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textartikel"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginRight="20dp"
-        android:text="Kekerasan anak di ruang \n lingkup sekolah" />
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Kekerasan Fisik" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        tools:src="@drawable/img_artikel" />
+
+    <TextView
+        android:id="@+id/textpernyataanisiartikel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="20dp"
-        android:layout_below="@id/textpernyataan"
-        tools:src="@tools:sample/avatars" />
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Kekerasan fisik adalah agresi fisik diarahkan pada seorang anak oleh orang dewasa. Hal ini dapat melibatkan meninju, memukul, menendang, mendorong, menampar, membakar, membuat memar, menarik telinga atau rambut, menusuk, membuat tersedak atau menguncang seorang anak. Pada usia ini otak anak mengalami pertumbuhan yang sangat pesat yang dikenal dengan istilah emas." />
 
-    <TextView
-        android:id="@+id/textsumber"
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="105dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="135dp"
-        android:layout_below="@id/imageView3"
-        android:text="by User0001" />
-
-    <TextView
-        android:id="@+id/textberita"
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_below="@id/textsumber"
-        android:text="      Seiring dengan perkembangan fisik yang beranjak matang, perkembangan motorik anak sudah dapat terkoordinasi dengan baik. Setiap gerakannya sudah selaras dengan kebutuhan atau minatnya. Masa ini ditandai dengan kelebihan gerak atau aktivitas. Anak cenderung menunjukkan gerakan-gerakan motorik yang cukup gesit dan lincah." />
-
-</RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
