@@ -41,11 +41,14 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="start"
             android:background="@drawable/bg_rounded_30">
 
             <ImageView
@@ -55,33 +58,31 @@
                 android:layout_height="50dp"
                 android:src="@drawable/image1" />
 
-            <TextView
-                android:id="@+id/textusername1"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/buttonuser1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:textColor="@color/black"
-                android:text="Ibu Ajeng" />
-
-            <TextView
-                android:id="@+id/textisidiskusi1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:text="Bu, permisi saya mau tanya susu yang bagus untuk umur 3 tahun apa ya?" />
+                android:textSize="12dp"
+                android:theme="@style/Button.Transparent"
+                android:background="@drawable/bg_rounded_30"
+                android:text="Bu Ajeng\n Bu, permisi saya mau tanya susu yang bagus untuk umur 3 tahun apa ya?" />
 
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
+
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="start"
             android:background="@drawable/bg_rounded_30">
 
             <ImageView
@@ -91,26 +92,21 @@
                 android:layout_height="50dp"
                 android:src="@drawable/image1" />
 
-            <TextView
-                android:id="@+id/textusername2"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/buttonuser2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:textColor="@color/black"
-                android:text="Ibu Sri" />
-
-            <TextView
-                android:id="@+id/textisidiskusi2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:text="Bagaimana cara mengatur emosi untuk tidak melampiaskan ke anak?" />
+                android:textSize="12dp"
+                android:theme="@style/Button.Transparent"
+                android:background="@drawable/bg_rounded_30"
+                android:text="Ibu Sri\nBagaimana cara mengatur emosi untuk tidak melampiaskan ke anak?" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-        <TextView
-            android:id="@+id/textdiskusibaruin"
+
+        <Button
+            android:id="@+id/buttondiskusi"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:text="Tambahkan Diskusi"
@@ -121,8 +117,9 @@
             android:layout_marginEnd="35dp"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/bg_rounded"
+            android:layout_marginBottom="175dp"
+            android:theme="@style/Button.Transparent"
+            android:background="@drawable/bg_rounded_30"
             android:textColor="@color/black"/>
 
 
