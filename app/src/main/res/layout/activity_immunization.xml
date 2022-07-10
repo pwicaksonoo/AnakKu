@@ -52,7 +52,6 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp">
-
                 <TextView
                     android:id="@+id/textAnakKeBerapa"
                     android:paddingStart="15dp"
@@ -62,6 +61,7 @@
                     android:textColor="@color/white"
                     android:textAlignment="textStart"
                     android:text="Anak Pertama"/>
+
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
