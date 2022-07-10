@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegisterFragment"
+    android:background="#E2F1F8"
     android:paddingTop="50dp"
     android:paddingStart="40dp"
     android:paddingEnd="40dp"
@@ -12,58 +13,65 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        tools:src="@tools:sample/avatars" />
+        android:layout_width="332dp"
+        android:layout_height="127dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/image1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Masukan data diri pengguna" />
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:text="Masukan data \ndiri pengguna" />
 
     <EditText
         android:id="@+id/editTextNama"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:ems="10"
-        android:hint="Nama Anda"
+        android:background="@drawable/bg_rounded"
+        android:hint="  Nama Anda"
         android:layout_marginBottom="10dp"
         android:inputType="text" />
 
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:ems="10"
-        android:hint="Email"
+        android:background="@drawable/bg_rounded"
+        android:hint="  Email"
         android:layout_marginBottom="10dp"
         android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:ems="10"
-        android:hint="Buat Kata Sandi"
+        android:background="@drawable/bg_rounded"
+        android:hint="  Masukkan Sandi"
         android:layout_marginBottom="10dp"
         android:inputType="textPassword" />
 
     <EditText
-        android:id="@+id/editTextKonfirmasiPassword"
+        android:id="@+id/editTextPassword2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:ems="10"
-        android:hint="Ulangi Kata Sandi"
+        android:background="@drawable/bg_rounded"
+        android:hint="  Ulangi Kata Sandi"
         android:layout_marginBottom="10dp"
         android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/editTextJenisKelamin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:ems="10"
-        android:hint="Jenis Kelamin"
+        android:background="@drawable/bg_rounded"
+        android:hint="  Jenis Kelamin"
         android:layout_marginBottom="10dp"
         android:inputType="textFilter" />
 
@@ -71,46 +79,64 @@
     <EditText
         android:id="@+id/editTextTanggalLahir"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Tanggal Lahir"
+        android:layout_height="40dp"
         android:ems="10"
+        android:background="@drawable/bg_rounded"
+        android:hint="  Tanggal Lahir"
+        android:layout_marginBottom="10dp"
         android:inputType="date" />
 
-    <EditText
-        android:id="@+id/editTextUmur"
+
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Umur"
-        android:layout_marginBottom="10dp"
-        android:inputType="number|text" />
+        android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/editTextJumlahAnak"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Jumlah Anak"
-        android:layout_marginBottom="10dp"
-        android:inputType="number|text" />
+        <EditText
+            android:id="@+id/editTextJumlahAnak"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:background="@drawable/bg_rounded"
+            android:hint="  Jumlah Anak"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="number|text" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="punya akun?" />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/buttonLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text="klik disini." />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="punya akun?" />
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_rounded_15_blue"
+                android:text="klik disini"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:padding="0dp"
+                android:theme="@style/Button.Transparent"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <Button
         android:id="@+id/buttonRegister"
-        android:layout_width="match_parent"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text=">" />
+        android:layout_gravity="center"
+        android:background="@drawable/bg_rounded_15_blue"
+        android:text="Daftar"
+        android:textColor="@color/white"
+        android:theme="@style/Button.Transparent"/>
 
 </LinearLayout>

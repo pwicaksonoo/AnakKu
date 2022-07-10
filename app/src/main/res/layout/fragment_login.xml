@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginFragment"
+    android:background="#E2F1F8"
     android:paddingTop="50dp"
     android:paddingStart="40dp"
     android:paddingEnd="40dp"
@@ -11,54 +12,97 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        tools:src="@tools:sample/avatars" />
+        android:layout_width="332dp"
+        android:layout_height="127dp"
+        android:src="@drawable/image1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:text="Masuk Akun" />
 
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_rounded"
         android:ems="10"
-        android:hint="Email"
-        android:layout_marginBottom="10dp"
+        android:hint="  Email"
+        android:layout_marginBottom="25dp"
         android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_rounded"
         android:ems="10"
-        android:hint="Buat Kata Sandi"
-        android:layout_marginBottom="10dp"
+        android:hint="  Buat Kata Sandi"
+        android:layout_marginBottom="25dp"
         android:inputType="textPassword" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="atau masuk dengan akun Google atau Facebook" />
+        android:layout_gravity="center"
+        android:text="atau masuk dengan akun\n Google atau Facebook"
+        android:textSize="15dp"
+        android:layout_marginBottom="10dp"/>
 
-    <Button
-        android:id="@+id/button1"
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Facebook" />
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Google" />
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
 
-    <Button
-        android:id="@+id/buttonLogin"
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded_30"
+            android:fontFamily="@font/FACEBOLF"
+            android:text="f"
+            android:textAllCaps="false"
+            android:textColor="#808080"
+            android:textSize="40dp"
+            android:theme="@style/Button.Transparent"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded_30"
+            android:fontFamily="@font/ProductSans"
+            android:text="G"
+            android:textColor="#808080"
+            android:textSize="40dp"
+            android:theme="@style/Button.Transparent" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=">" />
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_rounded_15_blue"
+            android:text="Masuk"
+            android:textColor="@color/white"
+            android:theme="@style/Button.Transparent"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </LinearLayout>

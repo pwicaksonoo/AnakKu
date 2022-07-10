@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegisterChildFragment"
+    android:background="#E2F1F8"
     android:paddingTop="50dp"
     android:paddingStart="40dp"
     android:paddingEnd="40dp"
@@ -11,66 +12,68 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        tools:src="@tools:sample/avatars" />
+        android:layout_width="332dp"
+        android:layout_height="127dp"
+        android:src="@drawable/image1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:text="Buat Profil Anak" />
 
     <EditText
         android:id="@+id/editTextNama"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:ems="10"
-        android:hint="Nama Anak"
-        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_rounded"
+        android:hint="  Nama Anak"
+        android:layout_marginBottom="20dp"
         android:inputType="text" />
 
     <EditText
         android:id="@+id/editTextJenisKelamin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:ems="10"
-        android:hint="Jenis Kelamin"
-        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_rounded"
+        android:hint="  Jenis Kelamin"
+        android:layout_marginBottom="20dp"
         android:inputType="textFilter" />
 
     <EditText
         android:id="@+id/editTextDate"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_rounded"
         android:ems="10"
-        android:hint="Tanggal Lahir"
-        android:layout_marginBottom="10dp"
+        android:hint="  Tanggal Lahir"
+        android:layout_marginBottom="20dp"
         android:inputType="date" />
 
-    <EditText
-        android:id="@+id/editTextNumberDecimal1"
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Berat Badan"
-        android:layout_marginBottom="10dp"
-        android:inputType="numberDecimal" />
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="50dp">
 
-    <EditText
-        android:id="@+id/editTextNumberDecimal2"
-        android:layout_width="match_parent"
+        <Button
+        android:id="@+id/buttonRegisterAnak"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Tinggi Badan"
-        android:layout_marginBottom="10dp"
-        android:inputType="numberDecimal" />
+        android:layout_gravity="center"
+        android:background="@drawable/bg_rounded_15_blue"
+        android:text="Daftar Anak"
+        android:textColor="@color/white"
+        android:theme="@style/Button.Transparent"/>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=">" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
 
 
 </LinearLayout>

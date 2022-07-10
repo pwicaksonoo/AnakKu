@@ -1,178 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E2F1F8"
     android:paddingStart="40dp"
     android:paddingTop="50dp"
     android:paddingEnd="40dp"
-    tools:context=".ChildProfileFragment">
+    tools:context=".ChildProfileFragment"
+    android:orientation="vertical"
+    >
 
     <TextView
         android:id="@+id/textprofileanak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="27dp"
-        android:layout_marginRight="20dp"
-        android:text="Profil Anak" />
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="Profil Anak"
+        android:textColor="@color/black"/>
 
     <TextView
         android:id="@+id/textpemantauan"
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="13dp"
-        android:layout_marginRight="20dp"
-        android:layout_toRightOf="@id/textprofileanak"
-        android:ems="25"
-        android:text="Pemantauan pertumbuhan dan perkembangan anak" />
-
-    <TextView
-        android:id="@+id/textwilliam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textprofileanak"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginRight="20dp"
-        android:layout_toRightOf="@id/textprofileanak"
-        android:text="William" />
+        android:layout_gravity="center"
+        android:text="pertumbuhan dan perkembangan anak"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"/>
 
-    <TextView
-        android:id="@+id/textbbi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textwilliam"
-        android:layout_marginLeft="-5dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginRight="20dp"
-        android:layout_toRightOf="@id/textprofileanak"
-        android:text="Berat Badan Ideal" />
-
-    <TextView
-        android:id="@+id/textmasukan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textbbi"
-        android:layout_marginLeft="-32dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginRight="20dp"
-        android:layout_toRightOf="@id/textprofileanak"
-        android:text="Masukan \nTinggi Badan" />
-
-    <EditText
-        android:id="@+id/editTextNumberDecimal"
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textbbi"
-        android:layout_marginBottom="10dp"
-        android:layout_toRightOf="@id/textmasukan"
-        android:ems="10"
-        android:hint="Tinggi"
-        android:inputType="numberDecimal" />
+        android:orientation="vertical"
+        android:background="@drawable/bg_rounded_10_bluemuda">
 
-    <Button
-        android:id="@+id/buttonhitung"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textmasukan"
-        android:layout_marginLeft="-53dp"
-        android:layout_marginTop="21dp"
-        android:layout_toRightOf="@id/textmasukan"
-        android:text="Hitung" />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_rounded"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
 
-    <TextView
-        android:id="@+id/textbbi2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttonhitung"
-        android:layout_marginLeft="-32dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginRight="20dp"
-        android:layout_toRightOf="@id/textprofileanak"
-        android:text="Berat \n Badan Ideal" />
+            <TextView
+                android:id="@+id/textwilliam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="WILLIAM"
+                android:textColor="#86BBD0"/>
 
-    <EditText
-        android:id="@+id/editTextNumberDecimal2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttonhitung"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="10dp"
-        android:layout_toRightOf="@id/textprofileanak"
-        android:hint="32 KG"
-        android:inputType="numberDecimal" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <TextView
-        android:id="@+id/textpesan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editTextNumberDecimal2"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginRight="15dp"
-        android:layout_toRightOf="@id/textprofileanak"
-        android:text="Pesan Singkat" />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_rounded_10_background">
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textpesan"
-        android:layout_marginLeft="-38dp"
-        android:layout_marginTop="15dp"
-        android:layout_toRightOf="@id/textprofileanak"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="text" />
+            <TextView
+                android:id="@+id/textbbi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berat Badan Ideal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
 
-    <TextView
-        android:id="@+id/textaktivitasbaru"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editTextTextMultiLine"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginRight="15dp"
-        android:layout_toRightOf="@id/textprofileanak"
-        android:text="Aktivitas Baru" />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textaktivitasbaru"
-        android:layout_toRightOf="@id/textprofileanak"
-        android:text="Makan Sendiri" />
+                <TextView
+                    android:id="@+id/textmasukan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11dp"
+                    android:textAlignment="textEnd"
+                    android:text="Masukan\nTinggi Badan"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"/>
 
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/checkBox"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="-4dp"
-        android:layout_toRightOf="@id/textprofileanak"
-        android:text="Mandiri" />
+                <EditText
+                    android:id="@+id/editTextNumberDecimal"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:hint="  Tinggi"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/bg_rounded"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"/>
 
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/checkBox"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="39dp"
-        android:layout_toRightOf="@id/textprofileanak"
-        android:text="Berbicara di depan umum" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <CheckBox
-        android:id="@+id/checkBox4"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/checkBox"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="87dp"
-        android:layout_toRightOf="@id/textprofileanak"
-        android:text="Menegur orang" />
+            <Button
+                android:id="@+id/buttonhitung"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_rounded_15_blue"
+                android:theme="@style/Button.Transparent"
+                android:textColor="@color/white"
+                android:text="Hitung"/>
 
-</RelativeLayout>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textbbi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:text="Berat\n Badan Ideal"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/editTextNumberDecimal2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:hint="  32 KG"
+                    android:inputType="numberDecimal"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/bg_rounded"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_rounded"
+            android:paddingTop="5dp"
+            android:paddingBottom="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="50dp">
+
+            <TextView
+                android:id="@+id/textInformasiAnak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informasi Anak"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="25dp"
+                android:layout_marginBottom="5dp">
+                <TextView
+                    android:id="@+id/textKelamin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kelamin : "
+                    android:textSize="12dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/textKelaminValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laki-laki"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="25dp">
+                <TextView
+                    android:id="@+id/textUmur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Umur : "
+                    android:textSize="12dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/textUmurValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9 Tahun"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
