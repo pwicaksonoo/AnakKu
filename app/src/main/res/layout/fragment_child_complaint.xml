@@ -1,82 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingStart="40dp"
     android:paddingTop="50dp"
     android:paddingEnd="40dp"
-    tools:context=".ChildComplaintFragment">
+    tools:context=".ChildComplaintFragment"
+    android:background="#E2F1F8"
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textkeluhananak"
+        android:id="@+id/textKeluhan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="27dp"
-        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
         android:text="Keluhan Anak" />
 
     <TextView
         android:id="@+id/textcaramengatasi"
-        android:layout_width="400dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="68dp"
-        android:layout_toRightOf="@id/textkeluhananak"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
         android:text="cara mengatasinya" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="60dp"
-        android:layout_below="@id/textcaramengatasi"
-        android:text="+ Demam" />
+        android:orientation="vertical"
+        android:background="@drawable/bg_rounded_10_bluemuda">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="5dp"
-        android:layout_below="@id/button"
-        android:text="+ Mimisan" />
+        <Button
+            android:id="@+id/buttonkeluhan1"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_rounded_15_blue"
+            android:text="demam"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:theme="@style/Button.Transparent"/>
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="5dp"
-        android:layout_below="@id/button2"
-        android:text="+ Diare" />
+        <Button
+            android:id="@+id/buttonkeluhan2"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_rounded_15_blue"
+            android:text="DIare"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:theme="@style/Button.Transparent"/>
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="5dp"
-        android:layout_below="@id/button3"
-        android:text="+ Batuk" />
+        <Button
+            android:id="@+id/buttonkeluhan3"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_rounded_15_blue"
+            android:text="Batuk"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:theme="@style/Button.Transparent"/>
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="5dp"
-        android:layout_below="@id/button4"
-        android:text="+ Muntah" />
+        <Button
+            android:id="@+id/buttonkeluhan4"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="250dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_rounded_15_blue"
+            android:text="Gatal - gatal"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:theme="@style/Button.Transparent"/>
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="5dp"
-        android:layout_below="@id/button5"
-        android:text="+ Kejang Demam" />
 
-</RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
