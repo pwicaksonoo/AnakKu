@@ -5,156 +5,221 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#E2F1F8"
     android:paddingStart="40dp"
     android:paddingTop="50dp"
     android:paddingEnd="40dp"
     tools:context=".HomeFragment">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        tools:src="@tools:sample/avatars" />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image1" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textwelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="Selamat Datang, William!" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="Informasi Anak, Imunisasi, dll." />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="27dp"
-        android:layout_marginRight="20dp"
-        android:layout_toRightOf="@id/imageView2"
-        android:text="Selamat Datang, William!" />
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="25dp">
+
+            <Button
+                android:id="@+id/buttonProfileAnak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_15_blue"
+                android:text="Profile\nAnak"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:padding="0dp"
+                android:theme="@style/Button.Transparent"/>
+
+            <Button
+                android:id="@+id/buttonimunisasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_15_blue"
+                android:text="Imunisasi"
+                android:layout_marginStart="15dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:padding="0dp"
+                android:theme="@style/Button.Transparent"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/buttonKeluhanAnak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_15_blue"
+                android:text="Keluhan\nAnak"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:padding="0dp"
+                android:theme="@style/Button.Transparent"/>
+
+            <Button
+                android:id="@+id/buttonArtikel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_15_blue"
+                android:text="Artikel"
+                android:layout_marginStart="15dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:padding="0dp"
+                android:theme="@style/Button.Transparent"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text"
-        android:layout_marginLeft="21dp"
-        android:layout_marginTop="15dp"
-        android:layout_toRightOf="@id/imageView2"
-        android:text="Informasi Anak, Imunisasi, dll." />
+        android:orientation="vertical"
+        android:background="@drawable/bg_rounded_10_bluemuda"
+        android:layout_marginTop="40dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_rounded_15_blue">
+
+            <TextView
+                android:id="@+id/textaktivitasbaru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aktivitas Baru"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:background="@drawable/bg_rounded_15_blue"
+                android:textColor="@color/white"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/textinfo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Makan Sendiri"
+            android:textSize="15dp"
+            android:paddingStart="45dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_rounded"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textinfo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mandiri"
+            android:textSize="15dp"
+            android:paddingStart="45dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_rounded"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textinfo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Berbicara di depan umum"
+            android:textSize="15dp"
+            android:paddingStart="45dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_rounded"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textinfo4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menegur Orang"
+            android:textSize="15dp"
+            android:paddingStart="45dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bg_rounded"
+            android:textColor="@color/black"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-    <Button
-        android:id="@+id/buttonimunisasi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text"
-        android:layout_marginLeft="39dp"
-        android:layout_marginTop="123dp"
-        android:layout_toRightOf="@id/buttoninfo"
-        android:text="Imunisasi" />
 
-    <Button
-        android:id="@+id/buttonartikel"
-        android:layout_width="115dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttonimunisasi"
-        android:layout_marginLeft="54dp"
-        android:layout_marginTop="24dp"
-        android:layout_toRightOf="@id/buttonkeluhan"
-        android:text="Artikel" />
-
-    <Button
-        android:id="@+id/buttoninfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/imageView2"
-        android:layout_marginLeft="-67dp"
-        android:layout_marginTop="49dp"
-        android:layout_toRightOf="@id/imageView2"
-        android:text="Profile Anak" />
-
-    <Button
-        android:id="@+id/buttonkeluhan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttoninfo"
-        android:layout_marginLeft="-136dp"
-        android:layout_marginTop="21dp"
-        android:layout_toRightOf="@id/buttoninfo"
-        android:ems="7"
-        android:text="Keluhan Anak" />
-
-    <Button
-        android:id="@+id/buttoneksplor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttonkeluhan"
-        android:layout_marginLeft="-72dp"
-        android:layout_marginTop="19dp"
-        android:layout_toRightOf="@id/buttoninfo"
-        android:text="Aktivitas Baru" />
-
-    <Button
-        android:id="@+id/buttoneksplor1"
-        android:layout_width="275dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttonkeluhan"
-        android:layout_marginLeft="-130dp"
-        android:layout_marginTop="72dp"
-        android:layout_toRightOf="@id/buttoninfo"
-        android:text="Gerak Halus" />
-
-    <Button
-        android:id="@+id/buttoneksplor2"
-        android:layout_width="275dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttoneksplor1"
-        android:layout_marginLeft="-131dp"
-        android:layout_marginTop="6dp"
-        android:layout_toRightOf="@id/buttoninfo"
-        android:text="Gerak Kasar" />
-
-    <Button
-        android:id="@+id/buttoneksplor3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttoneksplor2"
-        android:layout_marginLeft="-131dp"
-        android:layout_marginTop="11dp"
-        android:layout_toRightOf="@id/buttoninfo"
-        android:text="Sosialisasi dan Kemandirian" />
-
-    <Button
-        android:id="@+id/buttoneksplor4"
-        android:layout_width="275dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttoneksplor3"
-        android:layout_marginLeft="-132dp"
-        android:layout_marginTop="7dp"
-        android:layout_toRightOf="@id/buttoninfo"
-        android:text="Bicara dan Bahasa" />
-
-    <Button
-        android:id="@+id/buttonhome"
-        android:layout_width="40dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttoneksplor4"
-        android:layout_marginLeft="-17dp"
-        android:layout_marginTop="24dp"
-        android:layout_toRightOf="@id/buttoninfo"
-        android:text="+" />
-
-    <Button
-        android:id="@+id/buttonmap"
-        android:layout_width="55dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttoneksplor4"
-        android:layout_marginLeft="13dp"
-        android:layout_marginTop="23dp"
-        android:layout_toRightOf="@id/buttonhome"
-        app:icon="@android:drawable/ic_dialog_map" />
-
-    <Button
-        android:id="@+id/buttoncheck"
-        android:layout_width="45dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttoneksplor4"
-        android:layout_marginLeft="9dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginRight="31dp"
-        android:layout_toLeftOf="@id/buttonhome"
-        app:icon="@android:drawable/arrow_up_float" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

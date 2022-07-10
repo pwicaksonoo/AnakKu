@@ -135,7 +135,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/bg_rounded_15_blue"
-        android:text="Daftar"
+        android:text="Masuk"
         android:textColor="@color/white"
         android:theme="@style/Button.Transparent"/>
 
