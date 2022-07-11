@@ -50,7 +50,7 @@
             android:layout_marginBottom="10dp">
 
             <TextView
-                android:id="@+id/textwilliam"
+                android:id="@+id/textViewNamaAnak"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
@@ -71,7 +71,7 @@
             android:background="@drawable/bg_rounded_10_background">
 
             <TextView
-                android:id="@+id/textbbi"
+                android:id="@+id/textBBI"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Berat Badan Ideal"
@@ -97,26 +97,29 @@
                     android:textColor="@color/black"/>
 
                 <EditText
-                    android:id="@+id/editTextNumberDecimal"
+                    android:id="@+id/editTextTinggi"
                     android:layout_width="75dp"
                     android:layout_height="wrap_content"
-                    android:hint="  Tinggi"
+                    android:hint="Tinggi"
                     android:inputType="numberDecimal"
                     android:background="@drawable/bg_rounded"
                     android:paddingTop="3dp"
-                    android:paddingBottom="3dp"/>
+                    android:paddingBottom="3dp"
+                    android:paddingStart="5dp"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <Button
-                android:id="@+id/buttonhitung"
+                android:id="@+id/buttonHitung"
                 android:layout_width="wrap_content"
-                android:layout_height="25dp"
+                android:layout_height="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/bg_rounded_15_blue"
-                android:theme="@style/Button.Transparent"
+                android:background="@drawable/bg_rounded"
+                android:theme="@style/Button.Primary"
                 android:textColor="@color/white"
+                android:padding="0dp"
+                android:minHeight="0dp"
                 android:text="Hitung"/>
 
             <androidx.appcompat.widget.LinearLayoutCompat
@@ -137,7 +140,7 @@
                     android:textColor="@color/black"/>
 
                 <EditText
-                    android:id="@+id/editTextNumberDecimal2"
+                    android:id="@+id/editTextBeratBadan"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:hint="  32 KG"
@@ -178,7 +181,7 @@
                 android:paddingStart="25dp"
                 android:layout_marginBottom="5dp">
                 <TextView
-                    android:id="@+id/textKelamin"
+                    android:id="@+id/textViewKelamin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Kelamin : "
@@ -186,7 +189,7 @@
                     android:textColor="@color/black"/>
 
                 <TextView
-                    android:id="@+id/textKelaminValue"
+                    android:id="@+id/textViewKelaminValue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Laki-laki"
@@ -208,7 +211,7 @@
                     android:textColor="@color/black"/>
 
                 <TextView
-                    android:id="@+id/textUmurValue"
+                    android:id="@+id/textViewUmurValue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="9 Tahun"

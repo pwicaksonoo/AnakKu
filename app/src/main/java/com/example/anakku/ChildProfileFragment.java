@@ -1,64 +1,70 @@
 package com.example.anakku;
 
+import android.os.Build;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ChildProfileFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
+
+import com.example.anakku.viewmodels.ChildViewModel;
+
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.ZoneId;
+
 public class ChildProfileFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private TextView namaAnakTextView;
+    private EditText tinggiEditText;
+    private Button hitungButton;
+    private EditText beratBadanEditText;
+    private TextView kelaminValueTextView;
+    private TextView umurValueTextView;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public ChildProfileFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment ChildProfileFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static ChildProfileFragment newInstance(String param1, String param2) {
-        ChildProfileFragment fragment = new ChildProfileFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+    private ChildViewModel childViewModel;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+
+        childViewModel = new ViewModelProvider(requireActivity()).get(ChildViewModel.class);
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_child_profile, container, false);
+
+        namaAnakTextView = view.findViewById(R.id.textViewNamaAnak);
+        tinggiEditText = view.findViewById(R.id.editTextTinggi);
+        hitungButton = view.findViewById(R.id.buttonHitung);
+        beratBadanEditText = view.findViewById(R.id.editTextBeratBadan);
+        kelaminValueTextView = view.findViewById(R.id.textViewKelaminValue);
+        umurValueTextView = view.findViewById(R.id.textViewUmurValue);
+
+        if(childViewModel.getChild().getValue() != null) {
+            namaAnakTextView.setText(childViewModel.getChild().getValue().getNama());
+            if(childViewModel.getChild().getValue().getTinggiBadan() != null) tinggiEditText.setText(childViewModel.getChild().getValue().getTinggiBadan().toString());
+            kelaminValueTextView.setText((childViewModel.getChild().getValue().getJenisKelamin().equals("L")) ? "Laki-laki" : "Perempuan");
+            LocalDate dob = childViewModel.getChild().getValue().getTanggalLahir().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+            umurValueTextView.setText(String.valueOf(Period.between(dob, LocalDate.now()).getYears()) + " Tahun");
         }
+
+        return view;
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_child_profile, container, false);
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
     }
 }

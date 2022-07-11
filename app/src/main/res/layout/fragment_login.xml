@@ -65,12 +65,12 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_rounded_30"
-            android:fontFamily="@font/FACEBOLF"
+            android:fontFamily="@font/facebolf"
             android:text="f"
             android:textAllCaps="false"
             android:textColor="#808080"
             android:textSize="40dp"
-            android:theme="@style/Button.Transparent"
+            android:theme="@style/Button.Primary"
             android:layout_marginEnd="20dp"/>
 
         <Button
@@ -78,11 +78,11 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_rounded_30"
-            android:fontFamily="@font/ProductSans"
+            android:fontFamily="@font/productsans"
             android:text="G"
             android:textColor="#808080"
             android:textSize="40dp"
-            android:theme="@style/Button.Transparent" />
+            android:theme="@style/Button.Primary" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -101,7 +101,7 @@
             android:background="@drawable/bg_rounded_15_blue"
             android:text="Masuk"
             android:textColor="@color/white"
-            android:theme="@style/Button.Transparent"/>
+            android:theme="@style/Button.Primary"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

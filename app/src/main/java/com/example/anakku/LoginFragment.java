@@ -1,5 +1,6 @@
 package com.example.anakku;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -34,7 +35,9 @@ public class LoginFragment extends Fragment {
         loginViewModel.getUserMutableLiveData().observe(this, firebaseUser -> {
             if (firebaseUser != null) {
                 Toast.makeText(getContext(), "Logged in as " + firebaseUser.getEmail(), Toast.LENGTH_SHORT).show();
-                Navigation.findNavController(getView()).navigate(R.id.action_loginFragment_to_registerChildFragment);
+                Intent intent = new Intent(getActivity(), HomeActivity.class);
+                startActivity(intent);
+                getActivity().finish();
             }
         });
     }

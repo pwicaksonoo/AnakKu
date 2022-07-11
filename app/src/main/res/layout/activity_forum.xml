@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:textSize="12dp"
-                android:theme="@style/Button.Transparent"
+                android:theme="@style/Button.Primary"
                 android:background="@drawable/bg_rounded_30"
                 android:text="Bu Ajeng\n Bu, permisi saya mau tanya susu yang bagus untuk umur 3 tahun apa ya?" />
 
@@ -98,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:textSize="12dp"
-                android:theme="@style/Button.Transparent"
+                android:theme="@style/Button.Primary"
                 android:background="@drawable/bg_rounded_30"
                 android:text="Ibu Sri\nBagaimana cara mengatur emosi untuk tidak melampiaskan ke anak?" />
 
@@ -118,7 +118,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="175dp"
-            android:theme="@style/Button.Transparent"
+            android:theme="@style/Button.Primary"
             android:background="@drawable/bg_rounded_30"
             android:textColor="@color/black"/>
 

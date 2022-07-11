@@ -3,9 +3,9 @@
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/FACEBOLF" />
+        android:font="@font/facebook_font" />
     <font
         android:fontStyle="italic"
         android:fontWeight="400"
-        android:font="@font/FACEBOLF" />
+        android:font="@font/facebook_font" />
 </font-family>

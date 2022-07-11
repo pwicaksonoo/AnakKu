@@ -7,67 +7,118 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingStart="40dp"
-    android:paddingTop="50dp"
-    android:paddingEnd="40dp"
-    android:background="#E2F1F8"
-    android:orientation="vertical"
-    tools:context=".EducationalArticleFragment">
-
-    <androidx.appcompat.widget.ActionMenuView
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:paddingStart="40dp"
+        android:paddingTop="50dp"
+        android:paddingEnd="40dp"
+        android:background="#E2F1F8"
+        android:orientation="vertical"
+        tools:context=".EducationalArticleFragment">
 
-        <TextView
-            android:id="@+id/textartikel"
-            android:layout_width="154dp"
-            android:layout_height="54dp"
-            android:layout_gravity="start"
-            android:paddingEnd="15dp"
-            android:text="Artikel Edukasi"
-            android:textColor="@color/black"
-            android:textSize="18dp" />
-
-        <TextView
-            android:id="@+id/textpilihan"
-            android:layout_width="wrap_content"
+        <androidx.appcompat.widget.ActionMenuView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:textColor="@color/black"
-            android:textSize="15dp"
-            android:text="Pilihan artikel terpercaya" />
-    </androidx.appcompat.widget.ActionMenuView>
+            android:orientation="horizontal">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_rounded_15_blue"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="5dp"
-        android:orientation="vertical">
+            <TextView
+                android:id="@+id/textartikel"
+                android:layout_width="154dp"
+                android:layout_height="54dp"
+                android:layout_gravity="start"
+                android:paddingEnd="15dp"
+                android:text="Artikel Edukasi"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
 
-        <TextView
-            android:id="@+id/texttumbuhkembanganak"
-            android:paddingStart="15dp"
-            android:layout_marginTop="5dp"
+            <TextView
+                android:id="@+id/textpilihan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:text="Pilihan artikel terpercaya" />
+        </androidx.appcompat.widget.ActionMenuView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded_15_blue"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp"
             android:layout_marginBottom="5dp"
-            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/texttumbuhkembanganak"
+                android:paddingStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:text="Tumbuh Kembang Anak"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <Button
+                android:id="@+id/buttonpertumbuhanperkembangan"
+                android:paddingStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:theme="@style/Button.Primary"
+                android:background="@drawable/bg_rounded_30"
+                android:text="Pertumbuhan dan Perkembangan"/>
+
+            <Button
+                android:id="@+id/buttontumbuhkembang"
+                android:paddingStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:theme="@style/Button.Primary"
+                android:background="@drawable/bg_rounded_30"
+                android:text="Tumbuh Kembang Anak"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:layout_gravity="center"
-            android:text="Tumbuh Kembang Anak"/>
-    </androidx.appcompat.widget.LinearLayoutCompat>
+            android:background="@drawable/bg_rounded_15_blue"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textkekerasananak"
+                android:paddingStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:text="Kekerasan Anak"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
         <Button
-            android:id="@+id/buttonpertumbuhanperkembangan"
+            android:id="@+id/buttonkekerasanfisik"
             android:paddingStart="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp"
@@ -76,12 +127,12 @@
             android:textColor="@color/black"
             android:textSize="15dp"
             android:layout_gravity="center"
-            android:theme="@style/Button.Transparent"
+            android:theme="@style/Button.Primary"
             android:background="@drawable/bg_rounded_30"
-            android:text="Pertumbuhan dan Perkembangan"/>
+            android:text="Kekerasan Fisik"/>
 
         <Button
-            android:id="@+id/buttontumbuhkembang"
+            android:id="@+id/buttonkekerasananak"
             android:paddingStart="15dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="10dp"
@@ -90,60 +141,9 @@
             android:textColor="@color/black"
             android:textSize="15dp"
             android:layout_gravity="center"
-            android:theme="@style/Button.Transparent"
+            android:theme="@style/Button.Primary"
             android:background="@drawable/bg_rounded_30"
-            android:text="Tumbuh Kembang Anak"/>
+            android:text="Kekerasan pada Anak"/>
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_rounded_15_blue"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="5dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textkekerasananak"
-            android:paddingStart="15dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:layout_gravity="center"
-            android:text="Kekerasan Anak"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
-
-    <Button
-        android:id="@+id/buttonkekerasanfisik"
-        android:paddingStart="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="5dp"
-        android:layout_width="350dp"
-        android:layout_height="100dp"
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        android:layout_gravity="center"
-        android:theme="@style/Button.Transparent"
-        android:background="@drawable/bg_rounded_30"
-        android:text="Kekerasan Fisik"/>
-
-    <Button
-        android:id="@+id/buttonkekerasananak"
-        android:paddingStart="15dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        android:layout_width="350dp"
-        android:layout_height="100dp"
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        android:layout_gravity="center"
-        android:theme="@style/Button.Transparent"
-        android:background="@drawable/bg_rounded_30"
-        android:text="Kekerasan pada Anak"/>
-
-</androidx.appcompat.widget.LinearLayoutCompat>
 </ScrollView>

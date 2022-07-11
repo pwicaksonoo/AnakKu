@@ -2,21 +2,32 @@ package com.example.anakku.models;
 
 import java.util.Date;
 
-public class User {
+public class Child {
     private String uid;
     private String nama;
     private String jenisKelamin;
     private Date tanggalLahir;
-    private Integer jumlahAnak;
+    private Integer tinggiBadan;
+    private Integer beratBadan;
 
-    public User(String uid, String nama, String jenisKelamin, Date tanggalLahir, Integer jumlahAnak) {
-        super();
+    public Child() {
 
+    }
+
+    public Child(String uid, String nama, String jenisKelamin, Date tanggalLahir, Integer tinggiBadan, Integer beratBadan) {
         this.uid = uid;
         this.nama = nama;
         this.jenisKelamin = jenisKelamin;
         this.tanggalLahir = tanggalLahir;
-        this.jumlahAnak = jumlahAnak;
+        this.tinggiBadan = tinggiBadan;
+        this.beratBadan = beratBadan;
+    }
+
+    public Child(String uid, String nama, String jenisKelamin, Date tanggalLahir) {
+        this.uid = uid;
+        this.nama = nama;
+        this.jenisKelamin = jenisKelamin;
+        this.tanggalLahir = tanggalLahir;
     }
 
     public String getUid() {
@@ -51,11 +62,19 @@ public class User {
         this.tanggalLahir = tanggalLahir;
     }
 
-    public Integer getJumlahAnak() {
-        return jumlahAnak;
+    public Integer getTinggiBadan() {
+        return tinggiBadan;
     }
 
-    public void setJumlahAnak(Integer jumlahAnak) {
-        this.jumlahAnak = jumlahAnak;
+    public void setTinggiBadan(Integer tinggiBadan) {
+        this.tinggiBadan = tinggiBadan;
+    }
+
+    public Integer getBeratBadan() {
+        return beratBadan;
+    }
+
+    public void setBeratBadan(Integer beratBadan) {
+        this.beratBadan = beratBadan;
     }
 }

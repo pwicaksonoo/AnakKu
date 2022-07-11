@@ -45,7 +45,7 @@
             android:text="demam"
             android:textColor="@color/white"
             android:textSize="18dp"
-            android:theme="@style/Button.Transparent"/>
+            android:theme="@style/Button.Primary"/>
 
         <Button
             android:id="@+id/buttonkeluhan2"
@@ -58,7 +58,7 @@
             android:text="DIare"
             android:textColor="@color/white"
             android:textSize="18dp"
-            android:theme="@style/Button.Transparent"/>
+            android:theme="@style/Button.Primary"/>
 
         <Button
             android:id="@+id/buttonkeluhan3"
@@ -71,7 +71,7 @@
             android:text="Batuk"
             android:textColor="@color/white"
             android:textSize="18dp"
-            android:theme="@style/Button.Transparent"/>
+            android:theme="@style/Button.Primary"/>
 
         <Button
             android:id="@+id/buttonkeluhan4"
@@ -84,7 +84,7 @@
             android:text="Gatal - gatal"
             android:textColor="@color/white"
             android:textSize="18dp"
-            android:theme="@style/Button.Transparent"/>
+            android:theme="@style/Button.Primary"/>
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>

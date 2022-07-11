@@ -20,6 +20,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.Date;
+
 public class AuthRepository {
     private Application application;
     private FirebaseAuth firebaseAuth;
@@ -37,7 +39,7 @@ public class AuthRepository {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.P)
-    public void register(String nama, String email, String password) {
+    public void register(String nama, String email, String password, String jenisKelamin, Date tanggalLahir, Integer jumlahAnak) {
         firebaseAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(application.getMainExecutor(), new OnCompleteListener<AuthResult>() {
                     @Override
@@ -45,7 +47,7 @@ public class AuthRepository {
                         if (task.isSuccessful()) {
                             userMutableLiveData.postValue(firebaseAuth.getCurrentUser());
 
-                            User tempUser = new User(firebaseAuth.getCurrentUser().getUid(), nama, "P", 0);
+                            User tempUser = new User(firebaseAuth.getCurrentUser().getUid(), nama, jenisKelamin, tanggalLahir, jumlahAnak);
                             db.collection("users").add(tempUser).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                                 @Override
                                 public void onSuccess(DocumentReference documentReference) {
