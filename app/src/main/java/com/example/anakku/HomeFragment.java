@@ -24,6 +24,9 @@ public class HomeFragment extends Fragment {
     private RelativeLayout loadingPanel;
     private TextView welcomeTextView;
     private Button profileAnakButton;
+    private Button imunisasiButton;
+    private Button keluhanAnakButton;
+    private Button artikelButton;
 
     private ChildViewModel childViewModel;
 
@@ -42,6 +45,9 @@ public class HomeFragment extends Fragment {
         loadingPanel = view.findViewById(R.id.loadingPanel);
         loadingPanel.setVisibility(view.VISIBLE);
         profileAnakButton = view.findViewById(R.id.buttonProfileAnak);
+        imunisasiButton = view.findViewById(R.id.buttonImunisasi);
+        keluhanAnakButton = view.findViewById(R.id.buttonKeluhanAnak);
+        artikelButton = view.findViewById(R.id.buttonArtikel);
 
         childViewModel.getChild().observe(getViewLifecycleOwner(), child -> {
             if(child != null) welcomeTextView.setText("Selamat Datang, " + child.getNama() + "!");
@@ -59,6 +65,27 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Navigation.findNavController(getView()).navigate(R.id.action_homeFragment_to_childProfileFragment);
+            }
+        });
+
+        imunisasiButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(getView()).navigate(R.id.action_homeFragment_to_immunizationFragment);
+            }
+        });
+
+        keluhanAnakButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(getView()).navigate(R.id.action_homeFragment_to_childComplaintFragment);
+            }
+        });
+
+        artikelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(getView()).navigate(R.id.action_homeFragment_to_educationalArticleFragment);
             }
         });
 

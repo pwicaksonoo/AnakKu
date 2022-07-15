@@ -22,6 +22,11 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
+            android:id="@+id/action_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"/>
+        <action
             android:id="@+id/action_homeFragment_to_registerChildFragment"
             app:destination="@id/registerChildFragment"
             app:popUpTo="@id/registerChildFragment"
@@ -30,6 +35,21 @@
             android:id="@+id/action_homeFragment_to_childProfileFragment"
             app:destination="@id/childProfileFragment"
             app:popUpTo="@id/childProfileFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_homeFragment_to_immunizationFragment"
+            app:destination="@id/immunizationFragment"
+            app:popUpTo="@id/immunizationFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_homeFragment_to_childComplaintFragment"
+            app:destination="@id/childComplaintFragment"
+            app:popUpTo="@id/childComplaintFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_homeFragment_to_educationalArticleFragment"
+            app:destination="@id/educationalArticleFragment"
+            app:popUpTo="@id/educationalArticleFragment"
             app:popUpToInclusive="true"/>
     </fragment>
     <fragment
@@ -43,4 +63,72 @@
             app:popUpTo="@id/homeFragment"
             app:popUpToInclusive="true"/>
     </fragment>
+    <fragment
+        android:id="@+id/immunizationFragment"
+        android:name="com.example.anakku.ImmunizationFragment"
+        android:label="ImmunizationFragment" >
+        <action
+            android:id="@+id/action_immunizationFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/childComplaintFragment"
+        android:name="com.example.anakku.ChildComplaintFragment"
+        android:label="fragment_child_complaint"
+        tools:layout="@layout/fragment_child_complaint" >
+        <action
+            android:id="@+id/action_childComplaintFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_childComplaintFragment_to_keluhanDetailFragment"
+            app:destination="@id/keluhanDetailFragment"
+            app:popUpTo="@id/keluhanDetailFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/educationalArticleFragment"
+        android:name="com.example.anakku.EducationalArticleFragment"
+        android:label="EducationalArticleFragment" >
+        <action
+            android:id="@+id/action_educationalArticleFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_educationalArticleFragment_to_articleChildViolenceFragment"
+            app:destination="@id/articleChildViolenceFragment"
+            app:popUpTo="@id/articleChildViolenceFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/keluhanDetailFragment"
+        android:name="com.example.anakku.KeluhanDetailFragment"
+        android:label="fragment_keluhan_detail"
+        tools:layout="@layout/fragment_keluhan_detail" >
+        <action
+            android:id="@+id/action_keluhanDetailFragment_to_childComplaintFragment"
+            app:destination="@id/childComplaintFragment"
+            app:popUpTo="@id/childComplaintFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/articleChildViolenceFragment"
+        android:name="com.example.anakku.ArticleChildViolenceFragment"
+        android:label="fragment_article_child_violence"
+        tools:layout="@layout/fragment_article_child_violence" >
+        <action
+            android:id="@+id/action_articleChildViolenceFragment_to_educationalArticleFragment"
+            app:destination="@id/educationalArticleFragment"
+            app:popUpTo="@id/educationalArticleFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/activityAnakFragment"
+        android:name="com.example.anakku.ActivityAnakFragment"
+        android:label="fragment_activity_anak"
+        tools:layout="@layout/fragment_activity_anak" />
 </navigation>

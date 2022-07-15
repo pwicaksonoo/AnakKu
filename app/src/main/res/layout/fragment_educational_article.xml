@@ -5,18 +5,19 @@
     android:layout_width="match_parent"
     android:fillViewport="true"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EducationalArticleFragment">
 
-    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:paddingStart="40dp"
         android:paddingTop="50dp"
         android:paddingEnd="40dp"
+        android:paddingBottom="90dp"
         android:background="#E2F1F8"
-        android:orientation="vertical"
-        tools:context=".EducationalArticleFragment">
+        android:orientation="vertical">
 
         <androidx.appcompat.widget.ActionMenuView
             android:layout_width="match_parent"
@@ -118,7 +119,7 @@
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <Button
-            android:id="@+id/buttonkekerasanfisik"
+            android:id="@+id/buttonKekerasanFisik"
             android:paddingStart="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp"

@@ -5,19 +5,19 @@
     android:layout_width="match_parent"
     android:fillViewport="true"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ArticleChildViolenceFragment">
+
+<androidx.appcompat.widget.LinearLayoutCompat
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingStart="40dp"
     android:paddingTop="50dp"
     android:paddingEnd="40dp"
+    android:paddingBottom="90dp"
     android:orientation="vertical"
-    android:background="#E2F1F8"
-    tools:context=".ArticleChildViolenceFragment">
+    android:background="#E2F1F8">
 
     <TextView
         android:id="@+id/textartikel"
@@ -44,7 +44,7 @@
         android:layout_height="180dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        tools:src="@drawable/img_artikel" />
+        android:src="@drawable/img_artikel" />
 
     <TextView
         android:id="@+id/textpernyataanisiartikel"

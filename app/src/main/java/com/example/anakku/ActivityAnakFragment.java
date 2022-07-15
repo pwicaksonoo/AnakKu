@@ -9,7 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class ArticleChildViolenceFragment extends Fragment {
+import com.example.anakku.viewmodels.ChildViewModel;
+
+public class ActivityAnakFragment extends Fragment {
+
+    private ChildViewModel childViewModel;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -19,7 +23,7 @@ public class ArticleChildViolenceFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_article_child_violence, container, false);
+        View view = inflater.inflate(R.layout.fragment_activity_anak, container, false);
 
         return view;
     }

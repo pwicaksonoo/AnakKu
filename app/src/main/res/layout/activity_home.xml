@@ -1,23 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".HomeActivity"
+    android:background="#E2F1F8">
 
     <fragment
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/home_nav_graph"
         android:id="@+id/activity_main_navHostFragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/home_nav_graph" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/bg_rounded_20_white"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/nav_activity_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:theme="@style/Button.Primary"
+            android:background="@drawable/ic_check_box" />
+        <Button
+            android:id="@+id/nav_home_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:theme="@style/Button.Primary"
+            android:background="@drawable/ic_home_white" />
+        <Button
+            android:id="@+id/nav_location_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/Button.Primary"
+            android:background="@drawable/ic_location" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>
