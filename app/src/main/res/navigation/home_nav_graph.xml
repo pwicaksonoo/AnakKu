@@ -147,4 +147,9 @@
         android:label="fragment_activity_anak"
         tools:layout="@layout/fragment_activity_anak" />
     </fragment>
+    <fragment
+        android:id="@+id/activityAnakFragment"
+        android:name="com.example.anakku.ActivityAnakFragment"
+        android:label="fragment_activity_anak"
+        tools:layout="@layout/fragment_activity_anak" />
 </navigation>
