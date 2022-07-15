@@ -125,10 +125,26 @@
             app:destination="@id/educationalArticleFragment"
             app:popUpTo="@id/educationalArticleFragment"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_articleChildViolenceFragment_to_forumFragment"
+            app:destination="@id/forumFragment"
+            app:popUpTo="@id/forumFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
+    <fragment
+        android:id="@+id/forumFragment"
+        android:name="com.example.anakku.ForumFragment"
+        android:label="fragment_forum"
+        tools:layout="@layout/fragment_forum" >
+        <action
+            android:id="@+id/action_forumFragment_to_articleChildViolenceFragment"
+            app:destination="@id/articleChildViolenceFragment"
+            app:popUpTo="@id/articleChildViolenceFragment"
+            app:popUpToInclusive="true"/>
     <fragment
         android:id="@+id/activityAnakFragment"
         android:name="com.example.anakku.ActivityAnakFragment"
         android:label="fragment_activity_anak"
         tools:layout="@layout/fragment_activity_anak" />
+    </fragment>
 </navigation>
