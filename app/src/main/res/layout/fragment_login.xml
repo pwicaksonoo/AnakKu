@@ -72,6 +72,7 @@
             android:fontFamily="@font/facebolf"
             android:text="f"
             android:textAllCaps="false"
+            android:padding="0dp"
             android:textColor="#808080"
             android:textSize="40dp"
             android:theme="@style/Button.Primary"
@@ -80,10 +81,8 @@
         <Button
             android:id="@+id/button2"
             android:layout_width="60dp"
-            android:layout_height="60dp
-
-
-"
+            android:layout_height="60dp"
+            android:padding="0dp"
             android:background="@drawable/bg_rounded_30"
             android:fontFamily="@font/productsans"
             android:text="G"
