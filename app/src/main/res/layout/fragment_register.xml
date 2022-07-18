@@ -22,8 +22,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:textSize="20dp"
-        android:text="Masukan data \ndiri pengguna" />
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Masukan data \n diri pengguna" />
 
     <EditText
         android:id="@+id/editTextNama"
@@ -123,7 +125,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="punya akun?" />
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Punya akun?" />
 
             <Button
                 android:id="@+id/buttonLogin"
@@ -148,7 +152,10 @@
         android:layout_gravity="center"
         android:background="@drawable/bg_rounded_15_blue"
         android:text="Daftar"
+        android:textSize="20dp"
+        android:textAllCaps="false"
         android:textColor="@color/white"
+        android:padding="0dp"
         android:theme="@style/Button.Primary"
         android:layout_marginBottom="40dp"/>
 

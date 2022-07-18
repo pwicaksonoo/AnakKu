@@ -9,7 +9,7 @@
     android:paddingEnd="40dp"
     android:orientation="vertical"
     android:background="#E2F1F8"
-    tools:context=".ActivityAnakFragment">
+    tools:context=".NewActActivity">
 
     <TextView
         android:id="@+id/textaktivitasbaru"
@@ -17,7 +17,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
         android:text="Aktivitas Baru" />
 
     <TextView
@@ -26,6 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textColor="@color/black"
+        android:textSize="22dp"
         android:text="yang dilakukan anak bulan ini" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -41,7 +43,91 @@
             android:layout_height="180dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
-            android:src="@drawable/image7" />
+            tools:src="@drawable/image7" />
+
+        <TextView
+            android:id="@+id/textinfo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Makan Sendiri"
+            android:textSize="15dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_rounded"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textinfo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mandiri"
+            android:textSize="15dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_rounded"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textinfo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Berbicara di depan umum"
+            android:textSize="15dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            android:background="@drawable/bg_rounded"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textinfo4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menegur Orang"
+            android:textSize="15dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
+            android:background="@drawable/bg_rounded"
+            android:textColor="@color/black"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Tambahkan"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="20dp"
+                android:backgroundTint="#86BBD0"
+                android:background="@drawable/bg_rounded_15_blue"
+                android:textColor="@color/white"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
 
         <TextView
             android:id="@+id/textinfo1"

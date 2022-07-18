@@ -17,7 +17,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
         android:text="Aktivitas Baru" />
 
     <TextView
@@ -26,6 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textColor="@color/black"
+        android:textSize="22dp"
         android:text="yang dilakukan anak bulan ini" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -112,16 +114,16 @@
             android:textColor="@color/black"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:text="Tambahkan"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
-                android:textSize="10dp"
-                android:backgroundTint="@android:color/white"
+                android:layout_marginBottom="30dp"
+                android:textSize="20dp"
+                android:backgroundTint="#86BBD0"
                 android:background="@drawable/bg_rounded_15_blue"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

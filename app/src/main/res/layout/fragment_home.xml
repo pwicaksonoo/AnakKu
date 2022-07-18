@@ -30,8 +30,8 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="55dp"
             android:src="@drawable/image1" />
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -45,6 +45,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="19sp"
                 android:text="Selamat Datang, William!" />
 
             <TextView
@@ -52,6 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="@color/black"
+                android:textSize="16sp"
                 android:text="Informasi Anak, Imunisasi, dll." />
 
         </androidx.appcompat.widget.LinearLayoutCompat>

@@ -26,6 +26,7 @@
         android:layout_gravity="center"
         android:textColor="@color/black"
         android:textSize="20dp"
+        android:textStyle="bold"
         android:layout_marginBottom="10dp"
         android:text="Artikel  Kekerasan anak" />
 
@@ -35,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="22dp"
         android:text="Kekerasan Fisik" />
 
     <ImageView
@@ -55,7 +56,7 @@
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textAlignment="center"
-        android:text="Kekerasan fisik adalah agresi fisik diarahkan pada seorang anak oleh orang dewasa. Hal ini dapat melibatkan meninju, memukul, menendang, mendorong, menampar, membakar, membuat memar, menarik telinga atau rambut, menusuk, membuat tersedak atau menguncang seorang anak. Pada usia ini otak anak mengalami pertumbuhan yang sangat pesat yang dikenal dengan istilah emas." />
+        android:text="  Kekerasan fisik adalah agresi fisik diarahkan pada seorang anak oleh orang dewasa. Hal ini dapat melibatkan meninju, memukul, menendang, mendorong, menampar, membakar, membuat memar, menarik telinga atau rambut, menusuk, membuat tersedak atau menguncang seorang anak. Pada usia ini otak anak mengalami pertumbuhan yang sangat pesat yang dikenal dengan istilah emas." />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
 
