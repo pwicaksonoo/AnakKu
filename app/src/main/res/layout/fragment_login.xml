@@ -34,7 +34,7 @@
         android:background="@drawable/bg_rounded"
         android:ems="10"
         android:hint="  Email"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="15dp"
         android:inputType="textEmailAddress" />
 
     <EditText
