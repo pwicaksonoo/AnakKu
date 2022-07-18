@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="atau masuk dengan akun \n Google atau Facebook"
+        android:text="atau masuk dengan akun \nGoogle atau Facebook"
         android:textSize="15dp"
         android:textColor="@color/black"
         android:textStyle="bold"
@@ -66,8 +66,8 @@
 
         <Button
             android:id="@+id/button1"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:background="@drawable/bg_rounded_30"
             android:fontFamily="@font/facebolf"
             android:text="f"
@@ -79,8 +79,11 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp
+
+
+"
             android:background="@drawable/bg_rounded_30"
             android:fontFamily="@font/productsans"
             android:text="G"
