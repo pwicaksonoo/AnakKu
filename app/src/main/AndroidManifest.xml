@@ -31,7 +31,6 @@
 
         <activity android:name=".ForumActivity" />
         <activity android:name=".ComplaintActivity" />
-        <activity android:name=".NewActActivity" />
         <activity android:name=".ImmunizationActivity" />
         <activity
             android:name=".HomeActivity"
