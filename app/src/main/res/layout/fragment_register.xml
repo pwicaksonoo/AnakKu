@@ -131,11 +131,13 @@
 
             <Button
                 android:id="@+id/buttonLogin"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="5dp"
                 android:background="@drawable/bg_rounded_15_blue"
                 android:text="klik disini"
+                android:textStyle="italic"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:padding="0dp"
