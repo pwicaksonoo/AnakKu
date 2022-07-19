@@ -4,10 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PickChildFragment"
-    android:paddingTop="50dp"
+    android:orientation="vertical"
+    android:background="#E2F1F8"
     android:paddingStart="40dp"
-    android:paddingEnd="40dp"
-    android:orientation="vertical">
+    android:paddingTop="50dp"
+    android:paddingEnd="40dp">
 
     <TextView
         android:layout_width="match_parent"
