@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    tools:context=".KeluhanDetailFragment">
+    tools:context=".KeluhanGatalFragment">
 
     <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -14,7 +14,7 @@
         android:paddingStart="40dp"
         android:paddingTop="50dp"
         android:paddingEnd="40dp"
-        android:paddingBottom="90dp"
+        android:paddingBottom="110dp"
         android:orientation="vertical">
 
         <TextView
@@ -62,7 +62,7 @@
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:textColor="@color/white"
-                android:text="Demam" />
+                android:text="Gatal-Gatal" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -83,7 +83,7 @@
                 android:layout_below="@id/textsumber"
                 android:textColor="@color/white"
                 android:textSize="14dp"
-                android:text="1. Berikan kompres" />
+                android:text="1. Mandikan Anak dengan Cara Tepat" />
 
             <TextView
                 android:id="@+id/textcarasembuh2"
@@ -95,7 +95,7 @@
                 android:layout_below="@id/textcarasembuh"
                 android:textColor="@color/white"
                 android:textSize="14dp"
-                android:text="2. Hindari baju tebal" />
+                android:text="2. Oleskan Krim Pelembab" />
 
             <TextView
                 android:id="@+id/textcarasembuh3"
@@ -107,31 +107,7 @@
                 android:layout_below="@id/textcarasembuh2"
                 android:textColor="@color/white"
                 android:textSize="14dp"
-                android:text="3. Makanan dan minum yang cukup" />
-
-            <TextView
-                android:id="@+id/textcarasembuh4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="140dp"
-                android:layout_below="@id/textcarasembuh3"
-                android:textColor="@color/white"
-                android:textSize="14dp"
-                android:text="4. Jaga suhu ruangan" />
-
-            <TextView
-                android:id="@+id/textcarasembuh5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="80dp"
-                android:layout_below="@id/textcarasembuh4"
-                android:textColor="@color/white"
-                android:textSize="14dp"
-                android:text="5. Mandikan dengan air hangat" />
+                android:text="3. Mandi Air dingin" />
 
             <TextView
                 android:id="@+id/textcarasembuh6"
@@ -144,7 +120,7 @@
                 android:textColor="@color/white"
                 android:layout_marginBottom="10dp"
                 android:textSize="14dp"
-                android:text="6. Beri obat-obatan pereda demam" />
+                android:text="4. Kompres Es" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -158,7 +134,7 @@
             android:textColor="@color/black"
             android:textAlignment="center"
             android:textSize="16dp"
-            android:text="Jika demam semakin parah maka\nanak harus dilarikan ke dokter\nterdekat!" />
+            android:text="Jika Gatal semakin parah maka\nanak harus dilarikan ke dokter\nterdekat!" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 </ScrollView>

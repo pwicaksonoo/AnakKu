@@ -84,15 +84,31 @@
             app:popUpTo="@id/homeFragment"
             app:popUpToInclusive="true"/>
         <action
-            android:id="@+id/action_childComplaintFragment_to_keluhanDetailFragment"
-            app:destination="@id/keluhanDetailFragment"
-            app:popUpTo="@id/keluhanDetailFragment"
+            android:id="@+id/action_childComplaintFragment_to_keluhanDemamFragment"
+            app:destination="@id/keluhanDemamFragment"
+            app:popUpTo="@id/keluhanDemamFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_childComplaintFragment_to_keluhanGatalFragment"
+            app:destination="@id/keluhanGatalFragment"
+            app:popUpTo="@id/keluhanGatalFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_childComplaintFragment_to_keluhanDiareFragment"
+            app:destination="@id/keluhanDiareFragment"
+            app:popUpTo="@id/keluhanDiareFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_childComplaintFragment_to_keluhanBatukFragment"
+            app:destination="@id/keluhanBatukFragment"
+            app:popUpTo="@id/keluhanBatukFragment"
             app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/educationalArticleFragment"
         android:name="com.example.anakku.EducationalArticleFragment"
-        android:label="EducationalArticleFragment" >
+        android:label="EducationalArticleFragment"
+        tools:layout="@layout/fragment_educational_article" >
         <action
             android:id="@+id/action_educationalArticleFragment_to_homeFragment"
             app:destination="@id/homeFragment"
@@ -103,23 +119,38 @@
             app:destination="@id/articleChildViolenceFragment"
             app:popUpTo="@id/articleChildViolenceFragment"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_educationalArticleFragment_to_artikelTumbuhKembangAnakFragment"
+            app:destination="@id/artikelTumbuhKembangAnakFragment"
+            app:popUpTo="@id/artikelTumbuhKembangAnakFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_educationalArticleFragment_to_artikelPertumbuhanPerkembanganFragment"
+            app:destination="@id/artikelPertumbuhanPerkembanganFragment"
+            app:popUpTo="@id/artikelPertumbuhanPerkembanganFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_educationalArticleFragment_to_artikelKekerasanPadaAnakFragment"
+            app:destination="@id/artikelKekerasanPadaAnakFragment"
+            app:popUpTo="@id/artikelKekerasanPadaAnakFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
-        android:id="@+id/keluhanDetailFragment"
-        android:name="com.example.anakku.KeluhanDetailFragment"
-        android:label="fragment_keluhan_detail"
-        tools:layout="@layout/fragment_keluhan_detail" >
+        android:id="@+id/keluhanDemamFragment"
+        android:name="com.example.anakku.KeluhanDemamFragment"
+        android:label="fragment_keluhan_demam"
+        tools:layout="@layout/fragment_keluhan_demam" >
         <action
-            android:id="@+id/action_keluhanDetailFragment_to_childComplaintFragment"
+            android:id="@+id/action_keluhanDemamFragment_to_childComplaintFragment"
             app:destination="@id/childComplaintFragment"
             app:popUpTo="@id/childComplaintFragment"
             app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/articleChildViolenceFragment"
-        android:name="com.example.anakku.ArticleChildViolenceFragment"
+        android:name="com.example.anakku.ArtikelKekerasanFisikFragment"
         android:label="fragment_article_child_violence"
-        tools:layout="@layout/fragment_article_child_violence" >
+        tools:layout="@layout/fragment_artikel_kekerasan_fisik" >
         <action
             android:id="@+id/action_articleChildViolenceFragment_to_educationalArticleFragment"
             app:destination="@id/educationalArticleFragment"
@@ -148,5 +179,71 @@
         android:label="fragment_activity_anak"
         tools:layout="@layout/fragment_activity_anak">
 
+    </fragment>
+    <fragment
+        android:id="@+id/keluhanBatukFragment"
+        android:name="com.example.anakku.KeluhanBatukFragment"
+        android:label="fragment_keluhan_batuk"
+        tools:layout="@layout/fragment_keluhan_batuk" >
+        <action
+            android:id="@+id/action_keluhanBatukFragment_to_childComplaintFragment"
+            app:destination="@id/childComplaintFragment"
+            app:popUpTo="@id/childComplaintFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/keluhanDiareFragment"
+        android:name="com.example.anakku.KeluhanDiareFragment"
+        android:label="fragment_keluhan_diare"
+        tools:layout="@layout/fragment_keluhan_diare" >
+        <action
+            android:id="@+id/action_keluhanDiareFragment_to_childComplaintFragment"
+            app:destination="@id/childComplaintFragment"
+            app:popUpTo="@id/childComplaintFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/keluhanGatalFragment"
+        android:name="com.example.anakku.KeluhanGatalFragment"
+        android:label="fragment_keluhan_gatal"
+        tools:layout="@layout/fragment_keluhan_gatal" >
+        <action
+            android:id="@+id/action_keluhanGatalFragment_to_childComplaintFragment"
+            app:destination="@id/childComplaintFragment"
+            app:popUpTo="@id/childComplaintFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/artikelTumbuhKembangAnakFragment"
+        android:name="com.example.anakku.ArtikelTumbuhKembangAnakFragment"
+        android:label="fragment_artikel_tumbuh_kembang_anak"
+        tools:layout="@layout/fragment_artikel_tumbuh_kembang_anak" >
+        <action
+            android:id="@+id/action_artikelTumbuhKembangAnakFragment_to_educationalArticleFragment"
+            app:destination="@id/educationalArticleFragment"
+            app:popUpTo="@id/educationalArticleFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/artikelKekerasanPadaAnakFragment"
+        android:name="com.example.anakku.ArtikelKekerasanPadaAnakFragment"
+        android:label="fragment_artikel_kekerasan_pada_anak"
+        tools:layout="@layout/fragment_artikel_kekerasan_pada_anak" >
+        <action
+            android:id="@+id/action_artikelKekerasanPadaAnakFragment_to_educationalArticleFragment"
+            app:destination="@id/educationalArticleFragment"
+            app:popUpTo="@id/educationalArticleFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/artikelPertumbuhanPerkembanganFragment"
+        android:name="com.example.anakku.ArtikelPertumbuhanPerkembanganFragment"
+        android:label="fragment_artikel_pertumbuhan_perkembangan"
+        tools:layout="@layout/fragment_artikel_pertumbuhan_perkembangan" >
+        <action
+            android:id="@+id/action_artikelPertumbuhanPerkembanganFragment_to_educationalArticleFragment"
+            app:destination="@id/educationalArticleFragment"
+            app:popUpTo="@id/educationalArticleFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
 </navigation>
