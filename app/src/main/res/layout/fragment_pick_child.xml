@@ -17,7 +17,8 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:textColor="#86BBD0"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
 
     <TextView
         android:layout_width="wrap_content"
