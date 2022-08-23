@@ -12,9 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Profil Pengguna"
-        android:textSize="20dp"
+        android:textSize="30dp"
         android:textStyle="bold"
-        android:textColor="#86BBD0"
+        android:textColor="@color/black"
         android:gravity="center"
         android:layout_marginBottom="20dp"
         />
@@ -53,30 +53,36 @@
         android:textColor="@color/black"
         android:layout_marginBottom="10dp"
         android:gravity="center"
+
         />
     <Button
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity="left"
         android:background="@drawable/bg_rounded_15_blue"
         android:text="Ganti Email"
         android:textSize="15dp"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:theme="@style/Button.Primary"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-55dp"
+        android:layout_marginLeft="30dp"
+        />
+
     <Button
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity="right"
+        android:layout_marginTop="8dp"
         android:background="@drawable/bg_rounded_15_blue"
         android:text="Ganti Sandi"
-        android:textSize="15dp"
         android:textAllCaps="false"
         android:textColor="@color/white"
+        android:textSize="15dp"
         android:theme="@style/Button.Primary"
-        android:layout_margin="10dp"
-        />
+        android:layout_marginRight="30dp"/>
+
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
@@ -87,5 +93,8 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:theme="@style/Button.Primary"
+        android:layout_marginTop="300dp"
+
         />
+
 </LinearLayout>
