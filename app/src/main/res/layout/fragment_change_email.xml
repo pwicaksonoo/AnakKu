@@ -4,6 +4,9 @@
     android:layout_height="match_parent"
     android:background="#E2F1F8"
     android:orientation="vertical"
+    android:paddingTop="50dp"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp"
     >
 
     <TextView
@@ -15,16 +18,29 @@
         android:textColor="@color/black"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="25dp"
-        android:text="Masuk Akun" />
+        android:text="Ganti Email" />
 
+    <!--android:id="@+id/editTextEmail" -->
     <EditText
-        android:id="@+id/editTextEmail"
+
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/bg_rounded"
         android:ems="10"
-        android:hint="  Email"
+        android:hint="  Email Baru "
         android:layout_marginBottom="15dp"
         android:inputType="textEmailAddress" />
+
+    <!--android:id="@+id/buttonLogin" -->
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_rounded_15_blue"
+        android:text="Ganti Email"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:theme="@style/Button.Primary"/>
 
 </LinearLayout>
