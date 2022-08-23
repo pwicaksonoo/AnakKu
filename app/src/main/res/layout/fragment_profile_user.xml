@@ -18,7 +18,6 @@
         android:gravity="center"
         android:layout_marginBottom="20dp"
         />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,7 +27,6 @@
         android:layout_marginBottom="10dp"
         android:gravity="center"
         />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,6 +54,38 @@
         android:layout_marginBottom="10dp"
         android:gravity="center"
         />
-
-
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_rounded_15_blue"
+        android:text="Ganti Email"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:theme="@style/Button.Primary"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_rounded_15_blue"
+        android:text="Ganti Sandi"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:theme="@style/Button.Primary"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_rounded_15_blue"
+        android:text="Kembali"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:theme="@style/Button.Primary"
+        />
 </LinearLayout>
