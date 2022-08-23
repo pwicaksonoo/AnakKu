@@ -16,7 +16,7 @@ import com.example.anakku.viewmodels.ChildViewModel;
 
 public class ChildComplaintFragment extends Fragment {
 
-    private Button keluhan1Button;
+    private Button keluhanDemamButton, keluhanDiareButton, keluhanBatukButton, keluhanGatalButton;
 
     private ChildViewModel childViewModel;
 
@@ -31,12 +31,36 @@ public class ChildComplaintFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_child_complaint, container, false);
 
-        keluhan1Button = view.findViewById(R.id.buttonKeluhan1);
+        keluhanDemamButton = view.findViewById(R.id.buttonKeluhanDemam);
+        keluhanDiareButton = view.findViewById(R.id.buttonkeluhanDiare);
+        keluhanBatukButton = view.findViewById(R.id.buttonkeluhanBatuk);
+        keluhanGatalButton = view.findViewById(R.id.buttonkeluhanGatal);
 
-        keluhan1Button.setOnClickListener(new View.OnClickListener() {
+        keluhanDemamButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(getView()).navigate(R.id.action_childComplaintFragment_to_keluhanDetailFragment);
+                Navigation.findNavController(getView()).navigate(R.id.action_childComplaintFragment_to_keluhanDemamFragment);
+            }
+        });
+
+        keluhanDiareButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(getView()).navigate(R.id.action_childComplaintFragment_to_keluhanDiareFragment);
+            }
+        });
+
+        keluhanBatukButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(getView()).navigate(R.id.action_childComplaintFragment_to_keluhanBatukFragment);
+            }
+        });
+
+        keluhanGatalButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(getView()).navigate(R.id.action_childComplaintFragment_to_keluhanGatalFragment);
             }
         });
 

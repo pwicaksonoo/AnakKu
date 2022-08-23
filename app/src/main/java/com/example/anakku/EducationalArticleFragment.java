@@ -16,7 +16,7 @@ import com.example.anakku.viewmodels.ChildViewModel;
 
 public class EducationalArticleFragment extends Fragment {
 
-    private Button kekerasanFisikButtonl;
+    private Button kekerasanFisikButton, pertumbuhanPerkembanganButton, tumbuhKembangButton, kekerasanAnakButton;
 
     private ChildViewModel childViewModel;
 
@@ -31,12 +31,36 @@ public class EducationalArticleFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_educational_article, container, false);
 
-        kekerasanFisikButtonl = view.findViewById(R.id.buttonKekerasanFisik);
+        kekerasanFisikButton = view.findViewById(R.id.buttonKekerasanFisik);
+        pertumbuhanPerkembanganButton = view.findViewById(R.id.buttonpertumbuhanperkembangan);
+        tumbuhKembangButton = view.findViewById(R.id.buttontumbuhkembang);
+        kekerasanAnakButton = view.findViewById(R.id.buttonkekerasananak);
 
-        kekerasanFisikButtonl.setOnClickListener(new View.OnClickListener() {
+        kekerasanFisikButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Navigation.findNavController(getView()).navigate(R.id.action_educationalArticleFragment_to_articleChildViolenceFragment);
+            }
+        });
+
+        pertumbuhanPerkembanganButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(getView()).navigate(R.id.action_educationalArticleFragment_to_artikelPertumbuhanPerkembanganFragment);
+            }
+        });
+
+        tumbuhKembangButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(getView()).navigate(R.id.action_educationalArticleFragment_to_artikelTumbuhKembangAnakFragment);
+            }
+        });
+
+        kekerasanAnakButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(getView()).navigate(R.id.action_educationalArticleFragment_to_artikelKekerasanPadaAnakFragment);
             }
         });
 

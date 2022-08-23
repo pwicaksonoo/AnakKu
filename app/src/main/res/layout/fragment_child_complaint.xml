@@ -28,7 +28,7 @@
         android:textSize="18dp"
         android:textColor="@color/black"
         android:layout_marginBottom="10dp"
-        android:text="cara mengatasinya" />
+        android:text="Cara Mengatasinya" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -37,7 +37,7 @@
         android:background="@drawable/bg_rounded_10_bluemuda">
 
         <Button
-            android:id="@+id/buttonKeluhan1"
+            android:id="@+id/buttonKeluhanDemam"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
             android:layout_width="250dp"
@@ -51,7 +51,7 @@
             android:theme="@style/Button.Primary"/>
 
         <Button
-            android:id="@+id/buttonkeluhan2"
+            android:id="@+id/buttonkeluhanDiare"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="10dp"
             android:layout_width="250dp"
@@ -65,7 +65,7 @@
             android:theme="@style/Button.Primary"/>
 
         <Button
-            android:id="@+id/buttonkeluhan3"
+            android:id="@+id/buttonkeluhanBatuk"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="10dp"
             android:layout_width="250dp"
@@ -79,7 +79,7 @@
             android:theme="@style/Button.Primary"/>
 
         <Button
-            android:id="@+id/buttonkeluhan4"
+            android:id="@+id/buttonkeluhanGatal"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="250dp"
             android:layout_width="250dp"

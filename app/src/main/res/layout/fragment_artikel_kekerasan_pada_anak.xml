@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:id="@+id/scrollView1"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ArtikelKekerasanPadaAnakFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="40dp"
+        android:paddingTop="50dp"
+        android:paddingEnd="40dp"
+        android:paddingBottom="90dp"
+        android:orientation="vertical"
+        android:background="#E2F1F8">
+
+        <TextView
+            android:id="@+id/textartikel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:text="Artikel  Kekerasan anak" />
+
+        <TextView
+            android:id="@+id/textpernyataanartikel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:text="Kekerasan Pada Anak" />
+
+        <ImageView
+            android:id="@+id/imageViewArticle"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/img_artikel" />
+
+        <TextView
+            android:id="@+id/textpernyataanisiartikel"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textAlignment="textStart"
+            android:text="     Kekerasan pada anak tidak selalu terlihat tandanya secara kasat mata. Namun, hampir pasti meninggalkan luka emosional mendalam yang terbawa hingga anak dewasa kelak. Menurut World Health Organization, kekerasan pada anak usia dini bukan hanya membuat anak merasa tertekan dan menderita, tapi juga dapat menyebabkan konsekuensi jangka panjang."/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

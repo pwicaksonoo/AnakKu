@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".KeluhanDiareFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E2F1F8"
+        android:paddingStart="40dp"
+        android:paddingTop="50dp"
+        android:paddingEnd="40dp"
+        android:paddingBottom="127dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textkeluhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="Keluhan Anak" />
+
+        <TextView
+            android:id="@+id/textcaramengatasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:text="Cara Mengatasinya" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/image4"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_rounded_15_blue">
+            <TextView
+                android:id="@+id/textsumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Diare" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_rounded_15_blue">
+
+            <TextView
+                android:id="@+id/textcarasembuh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="90dp"
+                android:layout_below="@id/textsumber"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="1. Berikan minum secukupnya" />
+
+            <TextView
+                android:id="@+id/textcarasembuh2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/textcarasembuh"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="2. Selingi Air putih dengan pemberian oralit" />
+
+            <TextView
+                android:id="@+id/textcarasembuh3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/textcarasembuh2"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="3. Pilih makanan yang mudah dicerna" />
+
+            <TextView
+                android:id="@+id/textcarasembuh4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="140dp"
+                android:layout_below="@id/textcarasembuh3"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="4. Berikan obat diare" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/textperingatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_below="@id/textcarasembuh6"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:text="Jika diare semakin parah maka\nanak harus dilarikan ke dokter\nterdekat!" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

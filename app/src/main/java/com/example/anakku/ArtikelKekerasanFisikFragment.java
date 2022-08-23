@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
-public class ArticleChildViolenceFragment extends Fragment {
+public class ArtikelKekerasanFisikFragment extends Fragment {
 
     private ImageView articleImageView;
 
@@ -23,7 +23,7 @@ public class ArticleChildViolenceFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_article_child_violence, container, false);
+        View view = inflater.inflate(R.layout.fragment_artikel_kekerasan_fisik, container, false);
 
         articleImageView = view.findViewById(R.id.imageViewArticle);
         articleImageView.setOnClickListener(new View.OnClickListener() {

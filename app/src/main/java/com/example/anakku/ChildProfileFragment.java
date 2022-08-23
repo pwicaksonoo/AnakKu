@@ -2,18 +2,21 @@ package com.example.anakku;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
 
 import com.example.anakku.viewmodels.ChildViewModel;
 
@@ -57,8 +60,67 @@ public class ChildProfileFragment extends Fragment {
             if(childViewModel.getChild().getValue().getTinggiBadan() != null) tinggiEditText.setText(childViewModel.getChild().getValue().getTinggiBadan().toString());
             kelaminValueTextView.setText((childViewModel.getChild().getValue().getJenisKelamin().equals("L")) ? "Laki-laki" : "Perempuan");
             LocalDate dob = childViewModel.getChild().getValue().getTanggalLahir().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-            umurValueTextView.setText(String.valueOf(Period.between(dob, LocalDate.now()).getYears()) + " Tahun");
+            if(Period.between(dob, LocalDate.now()).getYears() == 0) umurValueTextView.setText(String.valueOf(Period.between(dob, LocalDate.now()).getMonths()) + " Bulan");
+            else umurValueTextView.setText(String.valueOf(Period.between(dob, LocalDate.now()).getYears()) + " Tahun");
+
+            Double beratIdeal = 0.0;
+            Integer umurBulan = Period.between(dob, LocalDate.now()).getMonths();
+            Integer umurTahun = Period.between(dob, LocalDate.now()).getYears();
+            Boolean isMale = (childViewModel.getChild().getValue().getJenisKelamin().equals("L")) ? true : false;
+            if(umurTahun == 0) {
+                if(umurBulan < 3) {
+                    if(isMale) {
+                        switch (umurBulan) {
+                            case 0:
+                                beratIdeal = 3.3;
+                                break;
+                            case 1:
+                                beratIdeal = 4.5;
+                                break;
+                            case 2:
+                                beratIdeal = 5.6;
+                                break;
+                        }
+                    }
+                    else {
+                        switch (umurBulan) {
+                            case 0:
+                                beratIdeal = 3.2;
+                                break;
+                            case 1:
+                                beratIdeal = 4.2;
+                                break;
+                            case 2:
+                                beratIdeal = 5.1;
+                                break;
+                        }
+                    }
+                }
+                else beratIdeal = (umurBulan + 9.0) / 2;
+            } else {
+                if(umurTahun >= 1 && umurTahun <=6 ) beratIdeal = (umurTahun * 2.0) + 8;
+                else if(umurTahun >= 7 && umurTahun <= 12) beratIdeal = ((umurTahun * 7.0) - 5) / 2;
+            }
+
+            beratBadanEditText.setText(beratIdeal.toString());
+            beratBadanEditText.setInputType(InputType.TYPE_NULL);
+            Toast.makeText(getContext(), "Halo", Toast.LENGTH_SHORT).show();
         }
+
+        hitungButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (tinggiEditText.getText().toString().length() == 0) {
+                    Toast.makeText(getContext(), "Input tinggi harus diisi", Toast.LENGTH_SHORT).show();
+                } else {
+                    Integer tinggi = Integer.parseInt(tinggiEditText.getText().toString());
+                    Double genderFactor = (childViewModel.getChild().getValue().getJenisKelamin().equals("L")) ? 0.1 : 0.15;
+                    Double beratIdeal = (tinggi-100) - ((tinggi-100) * genderFactor);
+                    beratBadanEditText.setText(beratIdeal.toString());
+                    Toast.makeText(getContext(), "" + beratIdeal.toString(), Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
         return view;
     }
