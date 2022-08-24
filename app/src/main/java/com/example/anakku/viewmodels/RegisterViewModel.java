@@ -8,7 +8,6 @@ import androidx.annotation.RequiresApi;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.anakku.models.User;
 import com.example.anakku.repositories.AuthRepository;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -17,14 +16,12 @@ import java.util.Date;
 public class RegisterViewModel extends AndroidViewModel {
     private AuthRepository authRepository;
     private MutableLiveData<FirebaseUser> userMutableLiveData;
-    private MutableLiveData<User> user;
 
     public RegisterViewModel(@NonNull Application application) {
         super(application);
 
         authRepository = new AuthRepository(application);
-        userMutableLiveData = authRepository.getUserMutableLiveData();
-        user = authRepository.getUser();
+        userMutableLiveData = authRepository.getFirebaseUserMutableLiveData();
     }
 
     @RequiresApi(api = Build.VERSION_CODES.P)
@@ -35,6 +32,4 @@ public class RegisterViewModel extends AndroidViewModel {
     public MutableLiveData<FirebaseUser> getUserMutableLiveData() {
         return userMutableLiveData;
     }
-
-    public MutableLiveData<User> getUser() { return user; }
 }

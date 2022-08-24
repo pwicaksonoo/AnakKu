@@ -131,43 +131,43 @@
                         android:orientation="vertical">
 
                         <CheckBox
-                            android:id="@+id/checkBoxbsg"
+                            android:id="@+id/checkBoxCat1BCG"
                             android:layout_width="80dp"
                             android:layout_height="20dp"
                             android:text="BCG" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxrota"
+                            android:id="@+id/checkBoxCat1Rotavirus"
                             android:layout_width="98dp"
                             android:layout_height="20dp"
                             android:text="Rotavirus" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxpolio"
+                            android:id="@+id/checkBoxCat1Polio"
                             android:layout_width="88dp"
                             android:layout_height="20dp"
                             android:text="Polio" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxpcv"
+                            android:id="@+id/checkBoxCat1PCV"
                             android:layout_width="89dp"
                             android:layout_height="20dp"
                             android:text="PCV" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxHepaB"
+                            android:id="@+id/checkBoxCat1HepatitisB"
                             android:layout_width="106dp"
                             android:layout_height="20dp"
                             android:text="Hepatitis B" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxcampak"
+                            android:id="@+id/checkBoxCat1Campak"
                             android:layout_width="89dp"
                             android:layout_height="20dp"
                             android:text="Campak" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxDPT"
+                            android:id="@+id/checkBoxCat1DPT"
                             android:layout_width="90dp"
                             android:layout_height="20dp"
                             android:text="DPT"
@@ -223,43 +223,43 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
                         <CheckBox
-                            android:id="@+id/checkBoxDPT2"
+                            android:id="@+id/checkBoxCat2DPT"
                             android:layout_width="90dp"
                             android:layout_height="20dp"
                             android:text="DPT" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxTifoid"
+                            android:id="@+id/checkBoxCat2Tifoid"
                             android:layout_width="90dp"
                             android:layout_height="20dp"
                             android:text="Tifoid" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxPolio2"
+                            android:id="@+id/checkBoxCat2Polio"
                             android:layout_width="90dp"
                             android:layout_height="20dp"
                             android:text="Polio" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxHepaA"
+                            android:id="@+id/checkBoxCat2HepatitisA"
                             android:layout_width="109dp"
                             android:layout_height="20dp"
                             android:text="Hepatitis A" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxpcv2"
+                            android:id="@+id/checkBoxCat2PCV"
                             android:layout_width="90dp"
                             android:layout_height="20dp"
                             android:text="PCV" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxVarisela"
+                            android:id="@+id/checkBoxCat2Varisel"
                             android:layout_width="90dp"
                             android:layout_height="20dp"
                             android:text="Varisela" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxMMR"
+                            android:id="@+id/checkBoxCat2MMR"
                             android:layout_width="90dp"
                             android:layout_height="20dp"
                             android:text="MMR"
@@ -315,7 +315,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
                         <CheckBox
-                            android:id="@+id/checkBoxDPT3"
+                            android:id="@+id/checkBoxCat3DPT"
                             android:layout_width="90dp"
                             android:layout_height="20dp"
                             android:text="DPT"
@@ -323,7 +323,7 @@
                             tools:layout_editor_absoluteY="461dp" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxTifoid2"
+                            android:id="@+id/checkBoxCat3Tifoid"
                             android:layout_width="90dp"
                             android:layout_height="20dp"
                             android:text="Tifoid"
@@ -331,7 +331,7 @@
                             tools:layout_editor_absoluteY="488dp" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxPolio3"
+                            android:id="@+id/checkBoxCat3Polio"
                             android:layout_width="90dp"
                             android:layout_height="20dp"
                             android:text="Polio"
@@ -339,7 +339,7 @@
                             tools:layout_editor_absoluteY="511dp" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxHepaA2"
+                            android:id="@+id/checkBoxCat3HepatitisA"
                             android:layout_width="109dp"
                             android:layout_height="20dp"
                             android:text="Hepatitis A"
@@ -347,7 +347,7 @@
                             tools:layout_editor_absoluteY="534dp" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxpcv3"
+                            android:id="@+id/checkBoxCat3PCV"
                             android:layout_width="90dp"
                             android:layout_height="20dp"
                             android:text="PCV"
@@ -355,7 +355,7 @@
                             tools:layout_editor_absoluteY="561dp" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxVarisela2"
+                            android:id="@+id/checkBoxCat3Varisela"
                             android:layout_width="90dp"
                             android:layout_height="20dp"
                             android:text="Varisela"
@@ -363,7 +363,7 @@
                             tools:layout_editor_absoluteY="461dp" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxMMR2"
+                            android:id="@+id/checkBoxCat3MMR"
                             android:layout_width="90dp"
                             android:layout_height="20dp"
                             android:text="MMR"
@@ -371,7 +371,7 @@
                             tools:layout_editor_absoluteY="488dp" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxInflu2"
+                            android:id="@+id/checkBoxCat3Influenza"
                             android:layout_width="90dp"
                             android:layout_height="20dp"
                             android:text="Influenza"
@@ -379,7 +379,7 @@
                             tools:layout_editor_absoluteY="511dp" />
 
                         <CheckBox
-                            android:id="@+id/checkBoxCampak3"
+                            android:id="@+id/checkBoxCat3Campak"
                             android:layout_width="90dp"
                             android:layout_height="20dp"
                             android:text="Campak"

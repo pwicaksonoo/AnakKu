@@ -1,8 +1,13 @@
 package com.example.anakku.models;
 
+import com.google.firebase.firestore.DocumentId;
+
 import java.util.Date;
 
 public class Child {
+    @DocumentId
+    private String documentId;
+
     private String uid;
     private String nama;
     private String jenisKelamin;
@@ -29,6 +34,10 @@ public class Child {
         this.jenisKelamin = jenisKelamin;
         this.tanggalLahir = tanggalLahir;
     }
+
+    public String getDocumentId() { return documentId; }
+
+    public void setDocumentId(String documentId) { this.documentId = documentId; }
 
     public String getUid() {
         return uid;

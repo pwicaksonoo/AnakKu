@@ -10,13 +10,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.navigation.Navigation;
 
 import com.example.anakku.viewmodels.LoginViewModel;
 
@@ -32,7 +30,7 @@ public class LoginFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         loginViewModel = new ViewModelProvider(this).get(LoginViewModel.class);
-        loginViewModel.getUserMutableLiveData().observe(this, firebaseUser -> {
+        loginViewModel.getFirebaseUserMutableLiveData().observe(this, firebaseUser -> {
             if (firebaseUser != null) {
                 Toast.makeText(getContext(), "Logged in as " + firebaseUser.getEmail(), Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getActivity(), HomeActivity.class);

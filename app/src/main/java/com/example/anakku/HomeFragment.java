@@ -8,16 +8,18 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.anakku.models.Child;
-import com.example.anakku.viewmodels.ChildViewModel;
+import com.example.anakku.adapters.ActivityAdapter;
+import com.example.anakku.settings.SharedPref;
+import com.example.anakku.viewmodels.HomeViewModel;
 
 public class HomeFragment extends Fragment {
 
@@ -27,13 +29,16 @@ public class HomeFragment extends Fragment {
     private Button imunisasiButton;
     private Button keluhanAnakButton;
     private Button artikelButton;
+    private RecyclerView activityRecycler;
+    private ActivityAdapter activityAdapter;
 
-    private ChildViewModel childViewModel;
+    private RelativeLayout loadingPanelRecycler;
+    private HomeViewModel homeViewModel;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        childViewModel = new ViewModelProvider(requireActivity()).get(ChildViewModel.class);
+        homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
     }
 
     @Nullable
@@ -49,16 +54,28 @@ public class HomeFragment extends Fragment {
         keluhanAnakButton = view.findViewById(R.id.buttonKeluhanAnak);
         artikelButton = view.findViewById(R.id.buttonArtikel);
 
-        childViewModel.getChild().observe(getViewLifecycleOwner(), child -> {
-            if(child != null) welcomeTextView.setText("Selamat Datang, " + child.getNama() + "!");
+        loadingPanelRecycler = view.findViewById(R.id.loadingPanelRecycler);
+        loadingPanelRecycler.setVisibility(View.VISIBLE);
+
+        activityRecycler = view.findViewById(R.id.recyclerViewActivityAnak);
+        activityRecycler.setLayoutManager(new LinearLayoutManager(view.getContext()));
+        activityRecycler.setHasFixedSize(true);
+
+        homeViewModel.updateUserDocumentIdSharedPref();
+
+        homeViewModel.getChild().observe(getViewLifecycleOwner(), child -> {
+            if(child != null) {
+                welcomeTextView.setText("Selamat Datang, " + child.getNama() + "!");
+
+                homeViewModel.getActivityAnakMutableLiveData().observe(getViewLifecycleOwner(), activityAnakList -> {
+                    loadingPanelRecycler.setVisibility(View.GONE);
+                    activityAdapter = new ActivityAdapter(activityAnakList);
+                    activityRecycler.setAdapter(activityAdapter);
+                    activityAdapter.notifyDataSetChanged();
+                });
+            }
             else Navigation.findNavController(getView()).navigate(R.id.action_homeFragment_to_registerChildFragment);
             loadingPanel.setVisibility(view.GONE);
-        });
-
-        childViewModel.getChilds().observe(getViewLifecycleOwner(), childs -> {
-            for ( Child c : childs ) {
-                Log.d("TESTT", c.getNama());
-            }
         });
 
         profileAnakButton.setOnClickListener(new View.OnClickListener() {
@@ -95,5 +112,11 @@ public class HomeFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        homeViewModel.stopHomeListener();
     }
 }

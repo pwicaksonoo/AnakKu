@@ -19,14 +19,14 @@
         app:defaultNavHost="true"
         app:navGraph="@navigation/home_nav_graph" />
 
-    <androidx.appcompat.widget.LinearLayoutCompat
+    <LinearLayout
         android:id="@+id/linear_bottom_nav"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginBottom="20dp"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="60dp"
         android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/bg_rounded_20_white"
         android:gravity="center">
 
@@ -34,22 +34,40 @@
             android:id="@+id/nav_activity_button"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="30dp"
-            android:theme="@style/Button.Primary"
-            android:background="@drawable/ic_check_box" />
-        <Button
-            android:id="@+id/nav_home_button"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="30dp"
-            android:theme="@style/Button.Primary"
-            android:background="@drawable/ic_home_white" />
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_check_box"
+            android:theme="@style/Button.Primary" />
+
         <Button
             android:id="@+id/nav_location_button"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:theme="@style/Button.Primary"
-            android:background="@drawable/ic_location" />
-    </androidx.appcompat.widget.LinearLayoutCompat>
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_location"
+            android:theme="@style/Button.Primary" />
+
+        <Button
+            android:id="@+id/nav_home_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_home_white"
+            android:theme="@style/Button.Primary" />
+
+        <Button
+            android:id="@+id/nav_child_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_child"
+            android:theme="@style/Button.Primary" />
+
+        <Button
+            android:id="@+id/nav_profile_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_profile"
+            android:theme="@style/Button.Primary" />
+    </LinearLayout>
 
 </RelativeLayout>

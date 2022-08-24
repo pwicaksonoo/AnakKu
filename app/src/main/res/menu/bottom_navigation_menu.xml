@@ -6,12 +6,22 @@
         android:icon="@drawable/ic_check_box"
         android:title="Activity"/>
     <item
+        android:id="@+id/nav_map"
+        android:enabled="true"
+        android:icon="@drawable/ic_location"
+        android:title="Map"/>
+    <item
         android:id="@+id/nav_home"
         android:enabled="true"
         android:icon="@drawable/ic_home_white"
         android:title="Home"/>
     <item
-        android:id="@+id/nav_map"
+        android:id="@+id/nav_child"
+        android:enabled="true"
+        android:icon="@drawable/ic_location"
+        android:title="Map"/>
+    <item
+        android:id="@+id/nav_profile"
         android:enabled="true"
         android:icon="@drawable/ic_location"
         android:title="Map"/>

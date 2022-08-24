@@ -15,6 +15,11 @@
             app:destination="@id/homeFragment"
             app:popUpTo="@id/homeFragment"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_registerChildFragment_to_pickChildFragment"
+            app:destination="@id/pickChildFragment"
+            app:popUpTo="@id/pickChildFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -50,6 +55,11 @@
             android:id="@+id/action_homeFragment_to_educationalArticleFragment"
             app:destination="@id/educationalArticleFragment"
             app:popUpTo="@id/educationalArticleFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_homeFragment_to_pickChildFragment"
+            app:destination="@id/pickChildFragment"
+            app:popUpTo="@id/pickChildFragment"
             app:popUpToInclusive="true"/>
     </fragment>
     <fragment
@@ -172,6 +182,21 @@
             app:destination="@id/articleChildViolenceFragment"
             app:popUpTo="@id/articleChildViolenceFragment"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_forumFragment_to_artikelPertumbuhanPerkembanganFragment"
+            app:destination="@id/artikelPertumbuhanPerkembanganFragment"
+            app:popUpTo="@id/artikelPertumbuhanPerkembanganFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_forumFragment_to_artikelTumbuhKembangAnakFragment"
+            app:destination="@id/artikelTumbuhKembangAnakFragment"
+            app:popUpTo="@id/artikelTumbuhKembangAnakFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_forumFragment_to_artikelKekerasanPadaAnakFragment"
+            app:destination="@id/artikelKekerasanPadaAnakFragment"
+            app:popUpTo="@id/artikelKekerasanPadaAnakFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/activityAnakFragment"
@@ -223,6 +248,11 @@
             app:destination="@id/educationalArticleFragment"
             app:popUpTo="@id/educationalArticleFragment"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_artikelTumbuhKembangAnakFragment_to_forumFragment"
+            app:destination="@id/forumFragment"
+            app:popUpTo="@id/forumFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/artikelKekerasanPadaAnakFragment"
@@ -234,6 +264,11 @@
             app:destination="@id/educationalArticleFragment"
             app:popUpTo="@id/educationalArticleFragment"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_artikelKekerasanPadaAnakFragment_to_forumFragment"
+            app:destination="@id/forumFragment"
+            app:popUpTo="@id/forumFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/artikelPertumbuhanPerkembanganFragment"
@@ -244,6 +279,65 @@
             android:id="@+id/action_artikelPertumbuhanPerkembanganFragment_to_educationalArticleFragment"
             app:destination="@id/educationalArticleFragment"
             app:popUpTo="@id/educationalArticleFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_artikelPertumbuhanPerkembanganFragment_to_forumFragment"
+            app:destination="@id/forumFragment"
+            app:popUpTo="@id/forumFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/profileUserFragment"
+        android:name="com.example.anakku.ProfileUserFragment"
+        android:label="fragment_profile_user"
+        tools:layout="@layout/fragment_profile_user" >
+        <action
+            android:id="@+id/action_profileUserFragment_to_changeEmailFragment"
+            app:destination="@id/changeEmailFragment"
+            app:popUpTo="@id/changeEmailFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_profileUserFragment_to_changePassFragment"
+            app:destination="@id/changePassFragment"
+            app:popUpTo="@id/changePassFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/changeEmailFragment"
+        android:name="com.example.anakku.ChangeEmailFragment"
+        android:label="fragment_change_email"
+        tools:layout="@layout/fragment_change_email" >
+        <action
+            android:id="@+id/action_changeEmailFragment_to_profileUserFragment"
+            app:destination="@id/profileUserFragment"
+            app:popUpTo="@id/profileUserFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/changePassFragment"
+        android:name="com.example.anakku.ChangePassFragment"
+        android:label="fragment_change_pass"
+        tools:layout="@layout/fragment_change_pass" >
+        <action
+            android:id="@+id/action_changePassFragment_to_profileUserFragment"
+            app:destination="@id/profileUserFragment"
+            app:popUpTo="@id/profileUserFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/pickChildFragment"
+        android:name="com.example.anakku.PickChildFragment"
+        android:label="fragment_pick_child"
+        tools:layout="@layout/fragment_pick_child" >
+        <action
+            android:id="@+id/action_pickChildFragment_to_registerChildFragment"
+            app:destination="@id/registerChildFragment"
+            app:popUpTo="@id/registerChildFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_pickChildFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/registerChildFragment"
             app:popUpToInclusive="true"/>
     </fragment>
 </navigation>

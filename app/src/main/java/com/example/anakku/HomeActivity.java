@@ -11,14 +11,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.anakku.settings.SharedPref;
+
 public class HomeActivity extends AppCompatActivity {
 
-    private Button buttonNavHome;
     private Button buttonNavActivity;
+    private Button buttonNavLocation;
+    private Button buttonNavHome;
+    private Button buttonNavChild;
+    private Button buttonNavProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        SharedPref.init(getApplicationContext());
         setContentView(R.layout.activity_home);
 
         final NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.activity_main_navHostFragment);
@@ -35,6 +41,8 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        buttonNavLocation = findViewById(R.id.nav_location_button);
+
         buttonNavHome = findViewById(R.id.nav_home_button);
         buttonNavHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +54,24 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        buttonNavChild = findViewById(R.id.nav_child_button);
+        buttonNavChild.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!(navHostFragment.getChildFragmentManager().getFragments().get(0) instanceof PickChildFragment)) {
+                    navController.navigate(R.id.pickChildFragment);
+                }
+            }
+        });
 
+        buttonNavProfile = findViewById(R.id.nav_profile_button);
+        buttonNavProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!(navHostFragment.getChildFragmentManager().getFragments().get(0) instanceof ProfileUserFragment)) {
+                    navController.navigate(R.id.profileUserFragment);
+                }
+            }
+        });
     }
 }

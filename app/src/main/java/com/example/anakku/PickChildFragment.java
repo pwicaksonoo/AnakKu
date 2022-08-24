@@ -1,64 +1,68 @@
 package com.example.anakku;
 
+
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link PickChildFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.anakku.adapters.ChildAdapter;
+import com.example.anakku.models.Child;
+import com.example.anakku.viewmodels.PickChildViewModel;
+
 public class PickChildFragment extends Fragment {
+    private PickChildViewModel pickChildViewModel;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public PickChildFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment PickChildFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static PickChildFragment newInstance(String param1, String param2) {
-        PickChildFragment fragment = new PickChildFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+    private RelativeLayout loadingPanel;
+    private RecyclerView childRecyclerView;
+    private ChildAdapter childAdapter;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+        pickChildViewModel = new ViewModelProvider(this).get(PickChildViewModel.class);
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_pick_child, container, false);
+
+        loadingPanel = view.findViewById(R.id.loadingPanel);
+        loadingPanel.setVisibility(View.VISIBLE);
+
+        childRecyclerView = view.findViewById(R.id.recyclerViewChild);
+        childRecyclerView.setLayoutManager(new GridLayoutManager(view.getContext(), 2));
+        childRecyclerView.setHasFixedSize(true);
+
+        pickChildViewModel.getChildListMutableLiveData().observe(getViewLifecycleOwner(), children -> {
+            loadingPanel.setVisibility(View.GONE);
+
+            if(children.size() == 0 || children.get(children.size()-1) != null) children.add(null);
+            childAdapter = new ChildAdapter(children);
+            childRecyclerView.setAdapter(childAdapter);
+            childAdapter.notifyDataSetChanged();
+        });
+        return view;
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pick_child, container, false);
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        pickChildViewModel.stopChildsListener();
     }
 }

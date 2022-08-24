@@ -3,12 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Desktop Folder/Desktop Folder Juli 2022/Skripsi Mid/App/AnakKu/app/src/main/res/layout/fragment_change_email.xml" value="0.36666666666666664" />
-        <entry key="..\:/Desktop Folder/Desktop Folder Juli 2022/Skripsi Mid/App/AnakKu/app/src/main/res/layout/fragment_change_pass.xml" value="0.36666666666666664" />
-        <entry key="..\:/Desktop Folder/Desktop Folder Juli 2022/Skripsi Mid/App/AnakKu/app/src/main/res/layout/fragment_login.xml" value="0.36666666666666664" />
-        <entry key="..\:/Desktop Folder/Desktop Folder Juli 2022/Skripsi Mid/App/AnakKu/app/src/main/res/layout/fragment_pick_child.xml" value="0.36666666666666664" />
-        <entry key="..\:/Desktop Folder/Desktop Folder Juli 2022/Skripsi Mid/App/AnakKu/app/src/main/res/layout/fragment_profile_user.xml" value="0.36666666666666664" />
-        <entry key="..\:/Desktop Folder/Desktop Folder Juli 2022/Skripsi Mid/App/AnakKu/app/src/main/res/layout/fragment_register.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/drawable-xxxhdpi/bg_rounded_10_background.xml" value="0.1125" />
         <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/drawable-xxxhdpi/bg_rounded_10_blue.xml" value="0.113" />
@@ -51,14 +45,32 @@
         <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_register.xml" value="0.1" />
         <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_register_child.xml" value="0.25" />
         <entry key="..\:/Users/Florence/StudioProjects/AnakKu/app/src/main/res/layout/fragment_welcome_screen.xml" value="0.18" />
-        <entry key="..\:/Users/dandi/Desktop/Skripsi---/App/AnakKu/app/src/main/res/layout/fragment_change_email.xml" value="0.17135416666666667" />
-        <entry key="..\:/Users/dandi/Desktop/Skripsi---/App/AnakKu/app/src/main/res/layout/fragment_change_pass.xml" value="0.17135416666666667" />
-        <entry key="..\:/Users/dandi/Desktop/Skripsi---/App/AnakKu/app/src/main/res/layout/fragment_child_profile.xml" value="0.264" />
-        <entry key="..\:/Users/dandi/Desktop/Skripsi---/App/AnakKu/app/src/main/res/layout/fragment_forum.xml" value="0.17135416666666667" />
-        <entry key="..\:/Users/dandi/Desktop/Skripsi---/App/AnakKu/app/src/main/res/layout/fragment_login.xml" value="0.17135416666666667" />
-        <entry key="..\:/Users/dandi/Desktop/Skripsi---/App/AnakKu/app/src/main/res/layout/fragment_pick_child.xml" value="0.4" />
-        <entry key="..\:/Users/dandi/Desktop/Skripsi---/App/AnakKu/app/src/main/res/layout/fragment_profile_user.xml" value="0.17135416666666667" />
-        <entry key="..\:/Users/dandi/Desktop/Skripsi---/App/AnakKu/app/src/main/res/layout/fragment_register.xml" value="0.17135416666666667" />
+        <entry key="app/src/main/res/drawable-v24/bg_rounded_30_blue.xml" value="0.221" />
+        <entry key="app/src/main/res/drawable/bg_rounded_30.xml" value="0.221" />
+        <entry key="app/src/main/res/drawable/ic_location.xml" value="0.221" />
+        <entry key="app/src/main/res/drawable/single_child_item.xml" value="0.221" />
+        <entry key="app/src/main/res/layout/activity_forum.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.29315309386322463" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2504528985507246" />
+        <entry key="app/src/main/res/layout/fragment_activity_anak.xml" value="0.43141682942708337" />
+        <entry key="app/src/main/res/layout/fragment_artikel_pertumbuhan_perkembangan.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_change_email.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_change_pass.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_child_complaint.xml" value="0.2504528985507246" />
+        <entry key="app/src/main/res/layout/fragment_child_profile.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_forum.xml" value="0.2896199544270834" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1802536231884058" />
+        <entry key="app/src/main/res/layout/fragment_immunization.xml" value="0.4641185647425897" />
+        <entry key="app/src/main/res/layout/fragment_keluhan_demam.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.2504528985507246" />
+        <entry key="app/src/main/res/layout/fragment_pick_child.xml" value="0.21829710144927536" />
+        <entry key="app/src/main/res/layout/fragment_profile_user.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.15520833333333334" />
+        <entry key="app/src/main/res/layout/fragment_register_child.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/single_activity_item.xml" value="0.15520833333333334" />
+        <entry key="app/src/main/res/layout/single_child_item.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/single_discussion_item.xml" value="0.605889892578125" />
+        <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.3098958333333333" />
       </map>
     </option>
   </component>

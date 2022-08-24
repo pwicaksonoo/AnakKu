@@ -2,12 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:background="#E2F1F8"
     android:paddingTop="50dp"
     android:paddingStart="40dp"
     android:paddingEnd="40dp"
-    >
+    tool:context=".ChangePassFragment">
 
     <TextView
         android:layout_width="wrap_content"
@@ -21,27 +22,42 @@
         android:text="Ganti Kata Sandi" />
 
     <!--android:id="@+id/editTextEmail" -->
-    <EditText
 
+    <EditText
+        android:id="@+id/editTextCurrentPassword"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/bg_rounded"
         android:ems="10"
-        android:hint="  Kata Sandi Baru "
+        android:hint="Kata Sandi Sekarang "
+        android:paddingStart="10dp"
         android:layout_marginBottom="15dp"
-        android:inputType="textEmailAddress" />
-    <EditText
+        android:inputType="textPassword" />
 
+    <EditText
+        android:id="@+id/editTextNewPassword"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/bg_rounded"
         android:ems="10"
-        android:hint="  Masukan Kembali "
+        android:hint="Kata Sandi Baru "
+        android:paddingStart="10dp"
         android:layout_marginBottom="15dp"
-        android:inputType="textEmailAddress" />
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_rounded"
+        android:ems="10"
+        android:hint="Masukan Kembali Kata Sandi Baru"
+        android:paddingStart="10dp"
+        android:layout_marginBottom="15dp"
+        android:inputType="textPassword" />
 
     <!--android:id="@+id/buttonLogin" -->
     <Button
+        android:id="@+id/buttonChangePassword"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -51,5 +67,18 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:theme="@style/Button.Primary"/>
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
 
 </LinearLayout>

@@ -14,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -44,6 +45,13 @@ public class RegisterChildFragment extends Fragment {
     private FirebaseAuth mAuth;
     private ChildViewModel childViewModel;
 
+    private LinearLayout bottomNavLinearLayout;
+//    private Button buttonNavActivity;
+//    private Button buttonNavLocation;
+//    private Button buttonNavHome;
+//    private Button buttonNavChild;
+//    private Button buttonNavProfile;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,11 +62,11 @@ public class RegisterChildFragment extends Fragment {
                 logoutAndBack();
             }
         });
-        childViewModel.getChild().observe(this, child -> {
-            if (child != null) {
-                Navigation.findNavController(getView()).navigate(R.id.action_registerChildFragment_to_homeFragment);
-            }
-        });
+//        childViewModel.getChild().observe(this, child -> {
+//            if (child != null) {
+//                Navigation.findNavController(getView()).navigate(R.id.action_registerChildFragment_to_homeFragment);
+//            }
+//        });
 
         OnBackPressedCallback backPressedCallback = new OnBackPressedCallback(true) {
             @Override
@@ -85,6 +93,18 @@ public class RegisterChildFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_register_child, container, false);
+
+        bottomNavLinearLayout = getActivity().findViewById(R.id.linear_bottom_nav);
+        bottomNavLinearLayout.setVisibility(View.GONE);
+
+//        buttonNavActivity = getActivity().findViewById(R.id.nav_activity_button);
+//        buttonNavLocation = getActivity().findViewById(R.id.nav_location_button);
+//        buttonNavHome = getActivity().findViewById(R.id.nav_home_button);
+//        buttonNavChild = getActivity().findViewById(R.id.nav_child_button);
+//        buttonNavActivity.setVisibility(View.GONE);
+//        buttonNavLocation.setVisibility(View.GONE);
+//        buttonNavHome.setVisibility(View.GONE);
+//        buttonNavChild.setVisibility(View.GONE);
 
         namaEditText = view.findViewById(R.id.editTextNama);
         jenisKelaminSpinner = view.findViewById(R.id.spinnerJenisKelamin);
@@ -133,7 +153,11 @@ public class RegisterChildFragment extends Fragment {
 
                 if (nama.length() > 0) {
                     if (tanggalLahir != null) {
-                        childViewModel.registerChild(nama, jenisKelamin, tanggalLahir);
+                        childViewModel.registerChild(nama, jenisKelamin, tanggalLahir).observe(getViewLifecycleOwner(), isSuccess -> {
+                            if(isSuccess) {
+                                Navigation.findNavController(getView()).navigate(R.id.action_registerChildFragment_to_homeFragment);
+                            }
+                        });
                     } else toastText = "Tanggal lahir tidak boleh kosong!";
                 } else toastText = "Nama anak tidak boleh kosong!";
 
@@ -145,6 +169,26 @@ public class RegisterChildFragment extends Fragment {
         });
 
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        bottomNavLinearLayout.setVisibility(View.GONE);
+//        buttonNavActivity.setVisibility(View.GONE);
+//        buttonNavLocation.setVisibility(View.GONE);
+//        buttonNavHome.setVisibility(View.GONE);
+//        buttonNavChild.setVisibility(View.GONE);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        bottomNavLinearLayout.setVisibility(View.VISIBLE);
+//        buttonNavActivity.setVisibility(View.VISIBLE);
+//        buttonNavLocation.setVisibility(View.VISIBLE);
+//        buttonNavHome.setVisibility(View.VISIBLE);
+//        buttonNavChild.setVisibility(View.VISIBLE);
     }
 
     private void logoutAndBack() {

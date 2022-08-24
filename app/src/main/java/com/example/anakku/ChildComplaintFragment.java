@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 
+import com.example.anakku.settings.SharedPref;
 import com.example.anakku.viewmodels.ChildViewModel;
 
 public class ChildComplaintFragment extends Fragment {
@@ -39,6 +40,8 @@ public class ChildComplaintFragment extends Fragment {
         keluhanDemamButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SharedPref.write(SharedPref.ACTIVE_CHILD, "MHK1CK8KaEY4KIrHtciC");
+                childViewModel.switchChild();
                 Navigation.findNavController(getView()).navigate(R.id.action_childComplaintFragment_to_keluhanDemamFragment);
             }
         });
@@ -46,6 +49,8 @@ public class ChildComplaintFragment extends Fragment {
         keluhanDiareButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SharedPref.write(SharedPref.ACTIVE_CHILD, "SPQjO8IsX5gkhwIb9R5K");
+                childViewModel.switchChild();
                 Navigation.findNavController(getView()).navigate(R.id.action_childComplaintFragment_to_keluhanDiareFragment);
             }
         });
@@ -53,6 +58,8 @@ public class ChildComplaintFragment extends Fragment {
         keluhanBatukButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SharedPref.write(SharedPref.ACTIVE_CHILD, "f58B8hscikf2a60RNbyJ");
+                childViewModel.switchChild();
                 Navigation.findNavController(getView()).navigate(R.id.action_childComplaintFragment_to_keluhanBatukFragment);
             }
         });
@@ -60,6 +67,8 @@ public class ChildComplaintFragment extends Fragment {
         keluhanGatalButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SharedPref.write(SharedPref.ACTIVE_CHILD, "NULL");
+                childViewModel.switchChild();
                 Navigation.findNavController(getView()).navigate(R.id.action_childComplaintFragment_to_keluhanGatalFragment);
             }
         });

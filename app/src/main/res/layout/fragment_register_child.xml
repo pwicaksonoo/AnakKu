@@ -34,7 +34,7 @@
         android:ems="10"
         android:background="@drawable/bg_rounded"
         android:hint="Nama Anak"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:inputType="text"
         android:paddingStart="10dp"/>
 
@@ -69,27 +69,16 @@
         android:inputType="date"
         android:paddingStart="10dp"/>
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom"
-        android:orientation="vertical"
-        android:padding="50dp">
-
-        <Button
+    <Button
         android:id="@+id/buttonRegisterAnak"
-        android:layout_width="125dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/bg_rounded_15_blue"
         android:text="Daftar Anak"
-            android:textAllCaps="false"
-            android:textSize="20dp"
+        android:textAllCaps="false"
         android:textColor="@color/white"
-        android:theme="@style/Button.Primary"/>
-
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
-
+        android:textSize="20dp"
+        android:theme="@style/Button.Primary" />
 
 </LinearLayout>

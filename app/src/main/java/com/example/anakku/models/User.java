@@ -9,6 +9,8 @@ public class User {
     private Date tanggalLahir;
     private Integer jumlahAnak;
 
+    public User() {};
+
     public User(String uid, String nama, String jenisKelamin, Date tanggalLahir, Integer jumlahAnak) {
         super();
 

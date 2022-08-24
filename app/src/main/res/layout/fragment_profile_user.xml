@@ -2,11 +2,26 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
     android:background="#E2F1F8"
     android:orientation="vertical"
     android:paddingTop="50dp"
     android:paddingStart="40dp"
-    android:paddingEnd="40dp">
+    android:paddingEnd="40dp"
+    tool:context=".ProfileUserFragment">
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
 
     <TextView
         android:layout_width="match_parent"
@@ -18,44 +33,83 @@
         android:gravity="center"
         android:layout_marginBottom="20dp"
         />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nama  :"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tanggal Lahir  :"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kata Sandi  :"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email  :"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
 
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama  :"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/textViewNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siti"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir  :"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/textViewTanggalLahir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email  :"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
     <Button
+        android:id="@+id/buttonChangeEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
@@ -71,6 +125,7 @@
         />
 
     <Button
+        android:id="@+id/buttonChangePassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
@@ -84,17 +139,18 @@
         android:layout_marginRight="30dp"/>
 
     <Button
+        android:id="@+id/buttonLogout"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/bg_rounded_15_blue"
-        android:text="Kembali"
+        android:text="Logout"
         android:textSize="15dp"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:theme="@style/Button.Primary"
-        android:layout_marginTop="300dp"
-
+        android:theme="@style/Button.Danger"
+        android:layout_marginTop="30dp"
+        android:visibility="visible"
         />
 
 </LinearLayout>

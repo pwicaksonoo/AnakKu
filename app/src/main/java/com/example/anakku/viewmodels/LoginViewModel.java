@@ -13,13 +13,13 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class LoginViewModel extends AndroidViewModel {
     private AuthRepository authRepository;
-    private MutableLiveData<FirebaseUser> userMutableLiveData;
+    private MutableLiveData<FirebaseUser> firebaseUserMutableLiveData;
 
     public LoginViewModel(@NonNull Application application) {
         super(application);
 
         authRepository = new AuthRepository(application);
-        userMutableLiveData = authRepository.getUserMutableLiveData();
+        firebaseUserMutableLiveData = authRepository.getFirebaseUserMutableLiveData();
     }
 
     @RequiresApi(api = Build.VERSION_CODES.P)
@@ -27,7 +27,7 @@ public class LoginViewModel extends AndroidViewModel {
         authRepository.login(email, password);
     }
 
-    public MutableLiveData<FirebaseUser> getUserMutableLiveData() {
-        return userMutableLiveData;
+    public MutableLiveData<FirebaseUser> getFirebaseUserMutableLiveData() {
+        return firebaseUserMutableLiveData;
     }
 }
