@@ -16,6 +16,10 @@ public class Immunization {
     public Immunization() {
     }
 
+    public Immunization(String childDocumentId) {
+        this.childDocumentId = childDocumentId;
+    }
+
     public Immunization(String documentId, String childDocumentId, Map<String, Boolean> category1, Map<String, Boolean> category2, Map<String, Boolean> category3) {
         this.documentId = documentId;
         this.childDocumentId = childDocumentId;

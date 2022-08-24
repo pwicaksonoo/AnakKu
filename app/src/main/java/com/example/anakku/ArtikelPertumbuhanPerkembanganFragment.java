@@ -34,9 +34,9 @@ public class ArtikelPertumbuhanPerkembanganFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_artikel_pertumbuhan_perkembangan, container, false);
 
-        artikelViewModel.getArticleMutableLiveData().observe(getViewLifecycleOwner(), article -> {
-            Log.d("Artikel", article.getJudul());
-        });
+//        artikelViewModel.getArticleMutableLiveData().observe(getViewLifecycleOwner(), article -> {
+//            Log.d("Artikel", article.getJudul());
+//        });
 
         articleImageView = view.findViewById(R.id.imageViewArticle);
         articleImageView.setOnClickListener(new View.OnClickListener() {

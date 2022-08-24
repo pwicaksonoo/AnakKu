@@ -210,9 +210,9 @@ public class ChildRepository {
                             }
                         }
 
-                        for (ActivityAnak aa : activityAnakList) {
-                            Log.d("Activity", "aktifitas " + aa.getName());
-                        }
+//                        for (ActivityAnak aa : activityAnakList) {
+//                            Log.d("Activity", "aktifitas " + aa.getName());
+//                        }
                         activityAnakListMutableLiveData.postValue(activityAnakList);
                     }
                 });
@@ -277,12 +277,31 @@ public class ChildRepository {
                 .addSnapshotListener(new EventListener<QuerySnapshot>() {
                     @Override
                     public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
+                        boolean isFound = false;
+
                         for(QueryDocumentSnapshot doc : value) {
                             if(doc != null) {
                                 Immunization immunization = doc.toObject(Immunization.class);
                                 immunizationMutableLiveData.postValue(immunization);
+                                isFound = true;
                                 break;
                             }
+                        }
+
+                        if(!isFound) {
+                            Immunization newImmunization = new Immunization(SharedPref.read(SharedPref.ACTIVE_CHILD, "NULL"));
+
+                            db.collection("immunizations")
+                                    .add(newImmunization)
+                                    .addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<DocumentReference> task) {
+                                            if(task.isSuccessful()) {
+                                                newImmunization.setDocumentId(task.getResult().getId());
+                                                immunizationMutableLiveData.postValue(newImmunization);
+                                            }
+                                        }
+                                    });
                         }
                     }
                 });

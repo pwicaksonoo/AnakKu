@@ -34,7 +34,7 @@ public class ActivityAnakRepository {
     }
 
     public MutableLiveData<List<ActivityAnak>> getActivityAnakListMutableLiveData() {
-        Log.i("TAG", "getActivityAnakListMutableLiveData: ");
+//        Log.i("TAG", "getActivityAnakListMutableLiveData: ");
         activityAnakListener =  mFirestore.collection("childs").document(SharedPref.read(SharedPref.ACTIVE_CHILD, "NULL"))
                 .collection("activities").addSnapshotListener(new EventListener<QuerySnapshot>() {
             @Override
@@ -46,9 +46,9 @@ public class ActivityAnakRepository {
                     }
                 }
 
-                for (ActivityAnak aa : activityAnakList) {
-                    Log.d("Activity", "aktifitas " + aa.getName());
-                }
+//                for (ActivityAnak aa : activityAnakList) {
+//                    Log.d("Activity", "aktifitas " + aa.getName());
+//                }
                 activityAnakListMutableLiveData.postValue(activityAnakList);
             }
         });

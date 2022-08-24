@@ -54,7 +54,7 @@ public class ProfileUserFragment extends Fragment {
 
         profileUserViewModel.getFirebaseUserMutableLiveData().observe(getViewLifecycleOwner(), firebaseUser -> {
             if(firebaseUser != null) {
-                Log.d("profile", firebaseUser.getEmail());
+//                Log.d("profile", firebaseUser.getEmail());
 
                 loadingPanel.setVisibility(View.GONE);
                 emailTextView.setText(firebaseUser.getEmail());
@@ -63,7 +63,7 @@ public class ProfileUserFragment extends Fragment {
 
         profileUserViewModel.getUserMutableLiveData().observe(getViewLifecycleOwner(), user -> {
             if(user != null) {
-                Log.d("profile", user.getNama());
+//                Log.d("profile", user.getNama());
 
                 loadingPanel.setVisibility(View.GONE);
                 namaTextView.setText(user.getNama());

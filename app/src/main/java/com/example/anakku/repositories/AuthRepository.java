@@ -63,12 +63,12 @@ public class AuthRepository {
                             db.collection("users").add(tempUser).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                                 @Override
                                 public void onSuccess(DocumentReference documentReference) {
-                                    Log.d("firestore", "onSuccess: " + documentReference.getId());
+//                                    Log.d("firestore", "onSuccess: " + documentReference.getId());
                                 }
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
                                 public void onFailure(@NonNull Exception e) {
-                                    Log.d("firestore", "onFailure: ");
+//                                    Log.d("firestore", "onFailure: ");
                                 }
                             });
 

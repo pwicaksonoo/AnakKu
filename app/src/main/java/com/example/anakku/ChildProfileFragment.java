@@ -111,7 +111,7 @@ public class ChildProfileFragment extends Fragment {
 
             beratBadanEditText.setText(beratIdeal.toString());
             beratBadanEditText.setInputType(InputType.TYPE_NULL);
-            Toast.makeText(getContext(), "Halo " + child.getNama(), Toast.LENGTH_SHORT).show();
+//            Toast.makeText(getContext(), "Halo " + child.getNama(), Toast.LENGTH_SHORT).show();
         });
 
         if(false && childProfileViewModel.getChild().getValue() != null) {
@@ -163,7 +163,7 @@ public class ChildProfileFragment extends Fragment {
 
             beratBadanEditText.setText(beratIdeal.toString());
             beratBadanEditText.setInputType(InputType.TYPE_NULL);
-            Toast.makeText(getContext(), "Halo", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(getContext(), "Halo", Toast.LENGTH_SHORT).show();
         }
 
         hitungButton.setOnClickListener(new View.OnClickListener() {
@@ -176,7 +176,7 @@ public class ChildProfileFragment extends Fragment {
                     Double genderFactor = (childProfileViewModel.getChild().getValue().getJenisKelamin().equals("L")) ? 0.1 : 0.15;
                     Double beratIdeal = (tinggi-100) - ((tinggi-100) * genderFactor);
                     beratBadanEditText.setText(beratIdeal.toString());
-                    Toast.makeText(getContext(), "" + beratIdeal.toString(), Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(getContext(), "" + beratIdeal.toString(), Toast.LENGTH_SHORT).show();
                 }
             }
         });

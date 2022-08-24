@@ -100,7 +100,7 @@ public class ActivityAnakFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Toast.makeText(getContext(), SharedPref.read(SharedPref.ACTIVE_CHILD, "NULL"), Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getContext(), SharedPref.read(SharedPref.ACTIVE_CHILD, "NULL"), Toast.LENGTH_SHORT).show();
     }
 
     @Override
